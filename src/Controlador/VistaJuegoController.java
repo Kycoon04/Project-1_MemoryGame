@@ -312,7 +312,7 @@ public class VistaJuegoController implements Initializable {
         VistaPrincipal.toFront();
     }
     @FXML
-    private void AceptarModosJuegos(ActionEvent event) {
+    private void AceptarModosJuegos(ActionEvent event) { /*hols*/
          VistaPrincipal.toFront();
          if(TresCartas.isSelected()){
          Facil.setTresCartas(true); Facil.setNumeroParejas(2);
