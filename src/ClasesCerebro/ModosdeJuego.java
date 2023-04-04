@@ -226,21 +226,20 @@ public abstract class ModosdeJuego {
             setFinalizarJuego(FinalizarJuego+1);
             setTurno(turno-1);
            
-           /*for (int i = 0; i < Lista.size(); i++) {
+           for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                 ListaReacomodo.add(Lista.get(i));
              }
-            }
-            Collections.shuffle(ListaReacomodo);     
+           }
+           desordenarLista(ListaReacomodo);
            j=0;  
-           for (ClaseCarta carta : Lista) {
-               if (!NumerosEncontrados.contains(carta.getValor())) {
+           for (int i = 0; i < Lista.size(); i++) {
+               if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
+               ClaseCarta aux = ListaReacomodo.get(j);
+               Lista.set(i, aux);
                j++;
-               carta.setCartaAdelante(ListaReacomodo.get(j-1).getCartaAdelante());
-               carta.setValor(ListaReacomodo.get(j-1).getValor());
-               System.out.println("ValorQueCambia "+ListaReacomodo.get(j-1).getValor());
                }
-           }*/
+            }
         }
         else{
             
@@ -265,22 +264,21 @@ public abstract class ModosdeJuego {
            NumerosEncontrados.add(b.getValor());
            setFinalizarJuego(FinalizarJuego+1);
            setTurno(turno-1);
-           /*for (int i = 0; i < Lista.size(); i++) {
+           
+           for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                 ListaReacomodo.add(Lista.get(i));
              }
             }
-            Collections.shuffle(ListaReacomodo);
-           j=0;
-            for (ClaseCarta carta : Lista) {
-               if (!NumerosEncontrados.contains(carta.getValor())) {
+            desordenarLista(ListaReacomodo);
+            j=0;
+            for (int i = 0; i < Lista.size(); i++) {
+               if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
+               ClaseCarta aux = ListaReacomodo.get(j);
+               Lista.set(i, aux);
                j++;
-               carta.setCartaAdelante(ListaReacomodo.get(j-1).getCartaAdelante());
-               carta.setValor(ListaReacomodo.get(j-1).getValor());
-               System.out.println("ValorQueCambia "+ListaReacomodo.get(j-1).getValor());
-               
                }
-           }*/
+            }
         }
         else{
             PuntoAdi=0;
@@ -906,5 +904,35 @@ public abstract class ModosdeJuego {
         ParametrosText.get(0).setFill(Color.WHITE);
         ParametrosText.get(1).setFill(Color.RED);
         }
+    }
+    public static void desordenarLista(ArrayList<ClaseCarta> Lista) {
+    int tamano = Lista.size();
+    int i = 0;
+    ArrayList<Integer> Auxiliar = new ArrayList<>();
+    ArrayList<ClaseCarta> Lista2 = Lista;
+    
+    while(i!=tamano/2){
+        int indice1 = (int) (Math.random() * tamano);
+        int indice2 = (int) (Math.random() * tamano);
+        
+        while(indice1 == indice2){
+        indice1 = (int) (Math.random() * tamano);
+        indice2 = (int) (Math.random() * tamano);
+        }
+        if(!(Auxiliar.contains(indice1) || Auxiliar.contains(indice2))){
+        Auxiliar.add(indice1);Auxiliar.add(indice2);
+        
+        swap(Lista, indice1,indice2);
+        
+        i++;
+        }
+    }
+    }
+    public static void swap(ArrayList<ClaseCarta> Lista, int Indice1,int Indice2){
+    
+    ClaseCarta aux = Lista.get(Indice1);
+    Lista.set(Indice1, Lista.get(Indice2));
+    Lista.set(Indice2, aux);
+        
     }
 }
