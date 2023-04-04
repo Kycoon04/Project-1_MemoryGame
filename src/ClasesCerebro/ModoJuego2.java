@@ -18,89 +18,40 @@ public class ModoJuego2 extends ModosdeJuego  {
     public void CartaSelecionada(String d) {
             switch(d){
          case "Carta1Juego2":
-             if(!(getLista().get(0).getCartaAtras().getImage()==getLista().get(0).getCartaAdelante())){
-                 
-         new animatefx.animation.BounceIn(getLista().get(0).getCartaAtras()).play();
-         getLista().get(0).getCartaAtras().setImage(getLista().get(0).getCartaAdelante());
-         NuevoA(getLista().get(0).getValor(),getLista().get(0).getCartaAtras());
-         }
+             CartaSelecion(1);
          break;
          case "Carta2Juego2":
-             if(!(getLista().get(1).getCartaAtras().getImage()==getLista().get(1).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(1).getCartaAtras()).play();
-         getLista().get(1).getCartaAtras().setImage(getLista().get(1).getCartaAdelante());
-         NuevoA(getLista().get(1).getValor(),getLista().get(1).getCartaAtras());
-             }
+             CartaSelecion(2);
          break;
          case "Carta3Juego2":
-             if(!(getLista().get(2).getCartaAtras().getImage()==getLista().get(2).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(2).getCartaAtras()).play();
-         getLista().get(2).getCartaAtras().setImage(getLista().get(2).getCartaAdelante());
-         NuevoA(getLista().get(2).getValor(),getLista().get(2).getCartaAtras());
-             }
+             CartaSelecion(3);
          break;
          case "Carta4Juego2":
-             if(!(getLista().get(3).getCartaAtras().getImage()==getLista().get(3).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(3).getCartaAtras()).play();
-         getLista().get(3).getCartaAtras().setImage(getLista().get(3).getCartaAdelante());
-         NuevoA(getLista().get(3).getValor(),getLista().get(3).getCartaAtras());
-             }
+             CartaSelecion(4);
          break;
          case "Carta5Juego2":
-             if(!(getLista().get(4).getCartaAtras().getImage()==getLista().get(4).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(4).getCartaAtras()).play();
-         getLista().get(4).getCartaAtras().setImage(getLista().get(4).getCartaAdelante());
-         NuevoA(getLista().get(4).getValor(),getLista().get(4).getCartaAtras());
-             }
+             CartaSelecion(5);
          break;
          case "Carta6Juego2":
-             if(!(getLista().get(5).getCartaAtras().getImage()==getLista().get(5).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(5).getCartaAtras()).play();
-         getLista().get(5).getCartaAtras().setImage(getLista().get(5).getCartaAdelante());
-         NuevoA(getLista().get(5).getValor(),getLista().get(5).getCartaAtras());
-             }
+             CartaSelecion(6);
          break;
          case "Carta7Juego2":
-             if(!(getLista().get(6).getCartaAtras().getImage()==getLista().get(6).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(6).getCartaAtras()).play();
-         getLista().get(6).getCartaAtras().setImage(getLista().get(6).getCartaAdelante());
-         NuevoA(getLista().get(6).getValor(),getLista().get(6).getCartaAtras());
-             }
+             CartaSelecion(7);
          break;
          case "Carta8Juego2":
-             if(!(getLista().get(7).getCartaAtras().getImage()==getLista().get(7).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(7).getCartaAtras()).play();
-         getLista().get(7).getCartaAtras().setImage(getLista().get(7).getCartaAdelante());
-         NuevoA(getLista().get(7).getValor(),getLista().get(7).getCartaAtras());
-             }
+             CartaSelecion(8);
          break;
          case "Carta9Juego2":
-             if(!(getLista().get(8).getCartaAtras().getImage()==getLista().get(8).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(8).getCartaAtras()).play();
-         getLista().get(8).getCartaAtras().setImage(getLista().get(8).getCartaAdelante());
-         NuevoA(getLista().get(8).getValor(),getLista().get(8).getCartaAtras());
-             }
+             CartaSelecion(9);
          break;
          case "Carta10Juego2":
-             if(!(getLista().get(9).getCartaAtras().getImage()==getLista().get(9).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(9).getCartaAtras()).play();
-         getLista().get(9).getCartaAtras().setImage(getLista().get(9).getCartaAdelante());
-         NuevoA(getLista().get(9).getValor(),getLista().get(9).getCartaAtras());
-             }
+             CartaSelecion(10);
          break;
          case "Carta11Juego2":
-             if(!(getLista().get(10).getCartaAtras().getImage()==getLista().get(10).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(10).getCartaAtras()).play();
-         getLista().get(10).getCartaAtras().setImage(getLista().get(10).getCartaAdelante());
-         NuevoA(getLista().get(10).getValor(),getLista().get(10).getCartaAtras());
-             }
+             CartaSelecion(11);
          break;
          case "Carta12Juego2":
-             if(!(getLista().get(11).getCartaAtras().getImage()==getLista().get(11).getCartaAdelante())){
-         new animatefx.animation.BounceIn(getLista().get(11).getCartaAtras()).play();
-         getLista().get(11).getCartaAtras().setImage(getLista().get(11).getCartaAdelante());
-         NuevoA(getLista().get(11).getValor(),getLista().get(11).getCartaAtras());
-             }
+             CartaSelecion(12);
          break;
          default:break;
         }

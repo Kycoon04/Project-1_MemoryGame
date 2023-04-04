@@ -231,6 +231,9 @@ public abstract class ModosdeJuego {
                 ListaReacomodo.add(Lista.get(i));
              }
            }
+           for (int i = 0; i < ListaReacomodo.size(); i++) {
+               System.out.println("ListaReacomodo"+ListaReacomodo.get(i).getValor());
+           }
            desordenarLista(ListaReacomodo);
            j=0;  
            for (int i = 0; i < Lista.size(); i++) {
@@ -240,6 +243,9 @@ public abstract class ModosdeJuego {
                j++;
                }
             }
+           for (int i = 0; i < ListaReacomodo.size(); i++) {
+               System.out.println("ListaReacomodo2"+ListaReacomodo.get(i).getValor());
+           }
         }
         else{
             
@@ -265,20 +271,26 @@ public abstract class ModosdeJuego {
            setFinalizarJuego(FinalizarJuego+1);
            setTurno(turno-1);
            
-           for (int i = 0; i < Lista.size(); i++) {
+            for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                 ListaReacomodo.add(Lista.get(i));
              }
             }
-            desordenarLista(ListaReacomodo);
-            j=0;
-            for (int i = 0; i < Lista.size(); i++) {
+                       for (int i = 0; i < ListaReacomodo.size(); i++) {
+               System.out.println("ListaReacomodo"+ListaReacomodo.get(i).getValor());
+           }
+           desordenarLista(ListaReacomodo);
+           j=0;  
+           for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                ClaseCarta aux = ListaReacomodo.get(j);
                Lista.set(i, aux);
                j++;
                }
             }
+           for (int i = 0; i < ListaReacomodo.size(); i++) {
+               System.out.println("ListaReacomodo2"+ListaReacomodo.get(i).getValor());
+           }
         }
         else{
             PuntoAdi=0;
@@ -929,10 +941,20 @@ public abstract class ModosdeJuego {
     }
     }
     public static void swap(ArrayList<ClaseCarta> Lista, int Indice1,int Indice2){
-    
     ClaseCarta aux = Lista.get(Indice1);
     Lista.set(Indice1, Lista.get(Indice2));
     Lista.set(Indice2, aux);
-        
+    }
+    public void CartaSelecion(int posicion){
+    for(int i=0; i<Lista.size();i++){
+             if(Lista.get(i).getNumCarta()==posicion){
+                 
+              if(!(getLista().get(i).getCartaAtras().getImage()==getLista().get(posicion-1).getCartaAdelante())){
+              new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+              getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
+              NuevoA(getLista().get(posicion-1).getValor(),getLista().get(i).getCartaAtras());
+              }
+             }
+    }
     }
 }
