@@ -350,9 +350,9 @@ public class VistaJuegoController implements Initializable {
         Dificil.setDificultad(6);
         }
         if(BotonDificultadDificil.isSelected()){
-        Facil.setDificultad(12);
-        Medio.setDificultad(12);
-        Dificil.setDificultad(12);
+        Facil.setDificultad(15);
+        Medio.setDificultad(15);
+        Dificil.setDificultad(15);
         }
     }
         @FXML
