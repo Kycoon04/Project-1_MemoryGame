@@ -271,9 +271,6 @@ public abstract class ModosdeJuego {
              }
             }
             Collections.shuffle(ListaReacomodo);
-             for (int i = 0; i < ListaReacomodo.size(); i++) {
-               System.out.println("ListaReacomodo: "+ListaReacomodo.get(i).getValor());
-           }
            j=0;
             for (ClaseCarta carta : Lista) {
                if (!NumerosEncontrados.contains(carta.getValor())) {
