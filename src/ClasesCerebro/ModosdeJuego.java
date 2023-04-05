@@ -284,7 +284,7 @@ public abstract class ModosdeJuego {
                Lista.set(i, aux);
                j++;
                }
-            }
+           }
         }
         }
         else{
@@ -342,27 +342,20 @@ public abstract class ModosdeJuego {
         if(aux == num2 ||aux == num1){
         k=probabilidad;
         }
+        }          
+        for(int k=0; k<Lista.size();k++){
+            if(Lista.get(Lista.get(k).getNumCarta()-1).getValor()==num1){ 
+            a.setPosicion(Lista.get(k).getCartaAtras());
+            Lista.get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
+            new animatefx.animation.BounceIn(Lista.get(k).getCartaAtras()).play();
+            }
         }
         for(int k=0; k<Lista.size();k++){
-             if(Lista.get(k).getValor()==num1){
-                 
-              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante())){
-              new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
-              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante());
-              NuevoA(getLista().get(Lista.get(k).getNumCarta()).getValor(),getLista().get(k).getCartaAtras());
-              }
-             }
-        }
-        
-        for(int k=0; k<Lista.size();k++){
-             if(Lista.get(k).getValor()==num2){
-                 
-              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante())){
-              new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
-              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante());
-              NuevoA(getLista().get(Lista.get(k).getNumCarta()).getValor(),getLista().get(k).getCartaAtras());
-              }
-             }
+            if(Lista.get(Lista.get(k).getNumCarta()-1).getValor()==num2){  
+            b.setPosicion(Lista.get(k).getCartaAtras());
+            Lista.get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
+            new animatefx.animation.BounceIn(Lista.get(k).getCartaAtras()).play();
+            }
         }
         setTurno(turno+1);
         if(aux == num2 ||aux == num1){

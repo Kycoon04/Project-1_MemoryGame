@@ -6,7 +6,6 @@ import ClasesCerebro.ModoJuego1;
 import ClasesCerebro.ModoJuego2;
 import ClasesCerebro.ModoJuego3;
 import ClasesCerebro.Puntaje;
-import java.applet.AudioClip;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.KeyFrame;
@@ -32,7 +31,6 @@ import javafx.util.Duration;
 public class VistaJuegoController implements Initializable {
     int contador=0;
     long tiempoMaximoEntreClics = 1000;
-    AudioClip sonido= java.applet.Applet.newAudioClip(getClass().getResource("/img/Boton.wav"));
     ModosdeJuego Facil = new ModoJuego1();
     ModosdeJuego Medio = new ModoJuego2();
     ModosdeJuego Dificil = new ModoJuego3();
@@ -211,10 +209,10 @@ public class VistaJuegoController implements Initializable {
     TiempoMaxTotal.getItems().add(5);
     TiempoMaxTotal.getItems().add(8);
     TiempoMaxTotal.setValue(2);
-    TiempoMaxJugador.getItems().add(10);
-    TiempoMaxJugador.getItems().add(15);
     TiempoMaxJugador.getItems().add(20);
-    TiempoMaxJugador.setValue(10);
+    TiempoMaxJugador.getItems().add(25);
+    TiempoMaxJugador.getItems().add(30);
+    TiempoMaxJugador.setValue(20);
     VistaPrincipal.toFront();
     this.TablaJugador1.setCellValueFactory(new PropertyValueFactory("Jugador1"));
     this.TablaJugador2.setCellValueFactory(new PropertyValueFactory("puntaje1"));
@@ -549,12 +547,6 @@ public class VistaJuegoController implements Initializable {
         }
     }
     }
-    @FXML
-    private void SonidoBtn(MouseEvent event) {
-
-        sonido.play();
-    }
-
     @FXML
     private void SonidoBtn(DragEvent event) {
     }
