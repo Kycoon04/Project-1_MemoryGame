@@ -15,6 +15,7 @@ public class Main extends Application {
                 Parent root = FXMLLoader.load(getClass().getResource("/Vista/VistaJuego.fxml"));
                 Scene scene = new Scene(root);
                 primaryStage.setScene(scene);
+                primaryStage.setResizable(false);
                 primaryStage.show();
         } catch (IOException e) {
             System.out.println(e.getMessage());
