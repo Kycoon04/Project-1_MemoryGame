@@ -343,21 +343,25 @@ public abstract class ModosdeJuego {
         k=probabilidad;
         }
         }
-        for (ClaseCarta carta : getLista()) {
-        if (carta.getValor()==num1) {
-           a.setPosicion(carta.getCartaAtras());
-            carta.getCartaAtras().setImage(getLista().get(carta.getNumCarta()-1).getCartaAdelante());
-            new animatefx.animation.BounceIn(carta.getCartaAtras()).play();
+        for(int k=0; k<Lista.size();k++){
+             if(Lista.get(k).getValor()==num1){
+                 
+              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante())){
+              new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
+              NuevoA(getLista().get(Lista.get(k).getNumCarta()-1).getValor(),getLista().get(i).getCartaAtras());
+              }
+             }
         }
-        i++;
-        }
-        for (ClaseCarta carta1 : getLista()) {
-        if (carta1.getValor()==num2) {
-            b.setPosicion(carta1.getCartaAtras());
-            carta1.getCartaAtras().setImage(getLista().get(carta1.getNumCarta()-1).getCartaAdelante());
-            new animatefx.animation.BounceIn(carta1.getCartaAtras()).play();
-        }
-        j++;
+        for(int k=0; k<Lista.size();k++){
+             if(Lista.get(k).getValor()==num2){
+                 
+              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante())){
+              new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
+              NuevoA(getLista().get(Lista.get(k).getNumCarta()-1).getValor(),getLista().get(i).getCartaAtras());
+              }
+             }
         }
         setTurno(turno+1);
         if(aux == num2 ||aux == num1){
