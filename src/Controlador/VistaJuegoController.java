@@ -341,19 +341,19 @@ public class VistaJuegoController implements Initializable {
             default:break;
         }
         if(BotonDificultadFacil.isSelected()){
-        Facil.setDificultad(3);
-        Medio.setDificultad(3);
-        Dificil.setDificultad(3);
+        Facil.setDificultad(5);
+        Medio.setDificultad(5);
+        Dificil.setDificultad(5);
         }
         if(BotonDificultadMedia.isSelected()){
-        Facil.setDificultad(6);
-        Medio.setDificultad(6);
-        Dificil.setDificultad(6);
+        Facil.setDificultad(12);
+        Medio.setDificultad(12);
+        Dificil.setDificultad(12);
         }
         if(BotonDificultadDificil.isSelected()){
-        Facil.setDificultad(15);
-        Medio.setDificultad(15);
-        Dificil.setDificultad(15);
+        Facil.setDificultad(50);
+        Medio.setDificultad(50);
+        Dificil.setDificultad(50);
         }
         Facil.setReacomodo(botonCartasAutomaticas.isSelected());
         Medio.setReacomodo(botonCartasAutomaticas.isSelected());

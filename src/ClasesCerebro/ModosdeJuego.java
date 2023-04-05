@@ -1,7 +1,6 @@
 package ClasesCerebro;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
