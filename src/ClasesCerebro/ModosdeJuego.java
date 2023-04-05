@@ -36,6 +36,7 @@ public abstract class ModosdeJuego {
     protected boolean PuntoAdicional;
     protected boolean CastigoPunto;
     protected boolean TresCartas;
+    protected boolean Reacomodo;
     protected int FinalizarJuego;
     protected int NumeroPartidas;
     protected int segundosJugador=0;
@@ -62,6 +63,10 @@ public abstract class ModosdeJuego {
 
     public ObservableList<Puntaje> getPuntajes() {
         return puntajes;
+    }
+
+    public void setReacomodo(boolean Reacomodo) {
+        this.Reacomodo = Reacomodo;
     }
 
     public void setNumeroParejas(int NumeroParejas) {
@@ -225,14 +230,11 @@ public abstract class ModosdeJuego {
             NumerosEncontrados.add(b.getValor());
             setFinalizarJuego(FinalizarJuego+1);
             setTurno(turno-1);
-           
+           if(Reacomodo){
            for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                 ListaReacomodo.add(Lista.get(i));
              }
-           }
-           for (int i = 0; i < ListaReacomodo.size(); i++) {
-               System.out.println("ListaReacomodo"+ListaReacomodo.get(i).getValor());
            }
            desordenarLista(ListaReacomodo);
            j=0;  
@@ -243,9 +245,7 @@ public abstract class ModosdeJuego {
                j++;
                }
             }
-           for (int i = 0; i < ListaReacomodo.size(); i++) {
-               System.out.println("ListaReacomodo2"+ListaReacomodo.get(i).getValor());
-           }
+        }
         }
         else{
             
@@ -270,14 +270,11 @@ public abstract class ModosdeJuego {
            NumerosEncontrados.add(b.getValor());
            setFinalizarJuego(FinalizarJuego+1);
            setTurno(turno-1);
-           
-            for (int i = 0; i < Lista.size(); i++) {
+           if(Reacomodo){
+           for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
                 ListaReacomodo.add(Lista.get(i));
              }
-            }
-                       for (int i = 0; i < ListaReacomodo.size(); i++) {
-               System.out.println("ListaReacomodo"+ListaReacomodo.get(i).getValor());
            }
            desordenarLista(ListaReacomodo);
            j=0;  
@@ -288,9 +285,7 @@ public abstract class ModosdeJuego {
                j++;
                }
             }
-           for (int i = 0; i < ListaReacomodo.size(); i++) {
-               System.out.println("ListaReacomodo2"+ListaReacomodo.get(i).getValor());
-           }
+        }
         }
         else{
             PuntoAdi=0;

@@ -6,6 +6,7 @@ import ClasesCerebro.ModoJuego1;
 import ClasesCerebro.ModoJuego2;
 import ClasesCerebro.ModoJuego3;
 import ClasesCerebro.Puntaje;
+import java.applet.AudioClip;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.KeyFrame;
@@ -21,6 +22,7 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.DragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
@@ -30,6 +32,7 @@ import javafx.util.Duration;
 public class VistaJuegoController implements Initializable {
     int contador=0;
     long tiempoMaximoEntreClics = 1000;
+    AudioClip sonido= java.applet.Applet.newAudioClip(getClass().getResource("/img/Boton.wav"));
     ModosdeJuego Facil = new ModoJuego1();
     ModosdeJuego Medio = new ModoJuego2();
     ModosdeJuego Dificil = new ModoJuego3();
@@ -354,6 +357,9 @@ public class VistaJuegoController implements Initializable {
         Medio.setDificultad(15);
         Dificil.setDificultad(15);
         }
+        Facil.setReacomodo(botonCartasAutomaticas.isSelected());
+        Medio.setReacomodo(botonCartasAutomaticas.isSelected());
+        Dificil.setReacomodo(botonCartasAutomaticas.isSelected());
     }
         @FXML
     private void Facil(ActionEvent event) {
@@ -542,5 +548,14 @@ public class VistaJuegoController implements Initializable {
                 break;
         }
     }
+    }
+    @FXML
+    private void SonidoBtn(MouseEvent event) {
+
+        sonido.play();
+    }
+
+    @FXML
+    private void SonidoBtn(DragEvent event) {
     }
 }
