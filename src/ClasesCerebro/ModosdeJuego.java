@@ -346,20 +346,21 @@ public abstract class ModosdeJuego {
         for(int k=0; k<Lista.size();k++){
              if(Lista.get(k).getValor()==num1){
                  
-              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante())){
+              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante())){
               new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
-              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
-              NuevoA(getLista().get(Lista.get(k).getNumCarta()-1).getValor(),getLista().get(i).getCartaAtras());
+              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante());
+              NuevoA(getLista().get(Lista.get(k).getNumCarta()).getValor(),getLista().get(k).getCartaAtras());
               }
              }
         }
+        
         for(int k=0; k<Lista.size();k++){
              if(Lista.get(k).getValor()==num2){
                  
-              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante())){
+              if(!(getLista().get(k).getCartaAtras().getImage()==getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante())){
               new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
-              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()-1).getCartaAdelante());
-              NuevoA(getLista().get(Lista.get(k).getNumCarta()-1).getValor(),getLista().get(i).getCartaAtras());
+              getLista().get(k).getCartaAtras().setImage(getLista().get(Lista.get(k).getNumCarta()).getCartaAdelante());
+              NuevoA(getLista().get(Lista.get(k).getNumCarta()).getValor(),getLista().get(k).getCartaAtras());
               }
              }
         }
