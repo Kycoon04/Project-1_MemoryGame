@@ -248,7 +248,6 @@ public abstract class ModosdeJuego {
         }
         }
         else{
-            
         PuntoAdi=0;
         Runnable mx=new Runnable(){
                 @Override
