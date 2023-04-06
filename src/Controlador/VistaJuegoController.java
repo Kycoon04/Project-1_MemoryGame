@@ -198,6 +198,8 @@ public class VistaJuegoController implements Initializable {
     private CheckBox CastigoPunto;
     @FXML
     private CheckBox TresCartas;
+    @FXML
+    private CheckBox CartaComodin;
     /*FIN ATRIBUTOS JAVAFX---------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -330,6 +332,11 @@ public class VistaJuegoController implements Initializable {
          Facil.setCastigoPunto(CastigoPunto.isSelected());
          Medio.setCastigoPunto(CastigoPunto.isSelected());
          Dificil.setCastigoPunto(CastigoPunto.isSelected());
+         if(CartaComodin.isSelected()){
+         Facil.CartaComodin();
+         Medio.CartaComodin();
+         Dificil.CartaComodin();
+         }
     }
     @FXML
     private void AceptarDificultad(ActionEvent event) {

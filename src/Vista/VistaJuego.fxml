@@ -96,157 +96,6 @@
             </Pane>
          </children>
       </Pane>
-      <BorderPane fx:id="VistaModosdeJuego" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
-         <left>
-            <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="252.0" prefWidth="401.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutY="242.0" prefHeight="272.0" prefWidth="396.0" style="-fx-background-color: #23417D;">
-                     <children>
-                        <ImageView fitHeight="223.0" fitWidth="379.0" layoutX="9.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true">
-                           <image>
-                              <Image url="@../img/logo.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane layoutY="512.0" prefHeight="246.0" prefWidth="396.0" style="-fx-background-color: #11254A;" />
-               </children>
-            </AnchorPane>
-         </left>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-               <children>
-                  <Text layoutX="243.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección Modos de juego">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <CheckBox layoutX="142.0" layoutY="270.0" mnemonicParsing="false" text="Carta Comodín">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="PuntoAdicional" layoutX="142.0" layoutY="336.0" mnemonicParsing="false" text="Punto adicional por pareja consecutiva">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="CastigoPunto" layoutX="142.0" layoutY="399.0" mnemonicParsing="false" text="Castigo de medio punto por fallo al buscar pareja">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="TresCartas" layoutX="142.0" layoutY="463.0" mnemonicParsing="false" text="Tres cartas al mismo tiempo ">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <Button contentDisplay="BOTTOM" layoutX="18.0" layoutY="688.0" mnemonicParsing="false" onAction="#SalirModoJuego" onDragEntered="#SonidoBtn" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Salir">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button contentDisplay="BOTTOM" layoutX="660.0" layoutY="688.0" mnemonicParsing="false" onAction="#AceptarModosJuegos" onDragEntered="#SonidoBtn" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Aceptar">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaDificultad" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
-         <left>
-            <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="252.0" prefWidth="401.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutY="242.0" prefHeight="272.0" prefWidth="396.0" style="-fx-background-color: #23417D;">
-                     <children>
-                        <ImageView fitHeight="223.0" fitWidth="379.0" layoutX="9.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true">
-                           <image>
-                              <Image url="@../img/logo.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane layoutY="512.0" prefHeight="246.0" prefWidth="396.0" style="-fx-background-color: #11254A;" />
-               </children>
-            </AnchorPane>
-         </left>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-               <children>
-                  <Text layoutX="250.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de Dificultad">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="238.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione la cantidad de cartas " textAlignment="CENTER" wrappingWidth="326.583984375">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </Text>
-                  <ChoiceBox fx:id="CantidadCartas" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="326.0" layoutY="236.0" prefWidth="150.0" />
-                  <Text layoutX="190.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo de partida (Minutos)" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </Text>
-                  <ChoiceBox fx:id="TiempoMaxTotal" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="327.0" layoutY="385.0" prefWidth="150.0" />
-                  <ChoiceBox fx:id="TiempoMaxJugador" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="327.0" layoutY="546.0" prefWidth="150.0" />
-                  <Text layoutX="189.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo por jugador (Segundos)" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="190.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reacomodo automático de las cartas faltantes a medio juego" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </Text>
-                  <CheckBox fx:id="botonCartasAutomaticas" layoutX="394.0" layoutY="672.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" />
-                  <Button contentDisplay="BOTTOM" layoutX="657.0" layoutY="689.0" mnemonicParsing="false" onAction="#AceptarDificultad" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Aceptar">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <CheckBox fx:id="BotonDificultadFacil" layoutX="88.0" layoutY="100.0" mnemonicParsing="false" onAction="#Facil" prefHeight="33.0" prefWidth="195.0" text="Dificultad Facil">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="BotonDificultadMedia" layoutX="300.0" layoutY="100.0" mnemonicParsing="false" onAction="#Media" prefHeight="33.0" prefWidth="195.0" text="Dificultad Media">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="BotonDificultadDificil" layoutX="508.0" layoutY="100.0" mnemonicParsing="false" onAction="#Dificil" prefHeight="33.0" prefWidth="224.0" text="Dificultad Dificil">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <Button contentDisplay="BOTTOM" layoutX="21.0" layoutY="689.0" mnemonicParsing="false" onAction="#SalirDificultad" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Salir">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
       <BorderPane fx:id="VistaInformacion" prefHeight="720.0" prefWidth="1180.0">
          <center>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1180.0">
@@ -1046,6 +895,157 @@
                   </Pane>
                </children>
             </VBox>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaDificultad" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
+         <left>
+            <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="252.0" prefWidth="401.0" style="-fx-background-color: #0286AD;" />
+                  <Pane layoutY="242.0" prefHeight="272.0" prefWidth="396.0" style="-fx-background-color: #23417D;">
+                     <children>
+                        <ImageView fitHeight="223.0" fitWidth="379.0" layoutX="9.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="512.0" prefHeight="246.0" prefWidth="396.0" style="-fx-background-color: #11254A;" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="250.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de Dificultad">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="238.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione la cantidad de cartas " textAlignment="CENTER" wrappingWidth="326.583984375">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="CantidadCartas" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="326.0" layoutY="236.0" prefWidth="150.0" />
+                  <Text layoutX="190.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo de partida (Minutos)" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="TiempoMaxTotal" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="327.0" layoutY="385.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="TiempoMaxJugador" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="327.0" layoutY="546.0" prefWidth="150.0" />
+                  <Text layoutX="189.0" layoutY="492.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo por jugador (Segundos)" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="190.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reacomodo automático de las cartas faltantes a medio juego" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="botonCartasAutomaticas" layoutX="394.0" layoutY="672.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" />
+                  <Button contentDisplay="BOTTOM" layoutX="657.0" layoutY="689.0" mnemonicParsing="false" onAction="#AceptarDificultad" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Aceptar">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <CheckBox fx:id="BotonDificultadFacil" layoutX="88.0" layoutY="100.0" mnemonicParsing="false" onAction="#Facil" prefHeight="33.0" prefWidth="195.0" text="Dificultad Facil">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="BotonDificultadMedia" layoutX="300.0" layoutY="100.0" mnemonicParsing="false" onAction="#Media" prefHeight="33.0" prefWidth="195.0" text="Dificultad Media">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="BotonDificultadDificil" layoutX="508.0" layoutY="100.0" mnemonicParsing="false" onAction="#Dificil" prefHeight="33.0" prefWidth="224.0" text="Dificultad Dificil">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Button contentDisplay="BOTTOM" layoutX="21.0" layoutY="689.0" mnemonicParsing="false" onAction="#SalirDificultad" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Salir">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaModosdeJuego" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
+         <left>
+            <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="252.0" prefWidth="401.0" style="-fx-background-color: #0286AD;" />
+                  <Pane layoutY="242.0" prefHeight="272.0" prefWidth="396.0" style="-fx-background-color: #23417D;">
+                     <children>
+                        <ImageView fitHeight="223.0" fitWidth="379.0" layoutX="9.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true">
+                           <image>
+                              <Image url="@../img/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane layoutY="512.0" prefHeight="246.0" prefWidth="396.0" style="-fx-background-color: #11254A;" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="243.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección Modos de juego">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="CartaComodin" layoutX="142.0" layoutY="270.0" mnemonicParsing="false" text="Carta Comodín">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="PuntoAdicional" layoutX="142.0" layoutY="336.0" mnemonicParsing="false" text="Punto adicional por pareja consecutiva">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="CastigoPunto" layoutX="142.0" layoutY="399.0" mnemonicParsing="false" text="Castigo de medio punto por fallo al buscar pareja">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="TresCartas" layoutX="142.0" layoutY="463.0" mnemonicParsing="false" text="Tres cartas al mismo tiempo ">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <Button contentDisplay="BOTTOM" layoutX="18.0" layoutY="688.0" mnemonicParsing="false" onAction="#SalirModoJuego" onDragEntered="#SonidoBtn" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Salir">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button contentDisplay="BOTTOM" layoutX="660.0" layoutY="688.0" mnemonicParsing="false" onAction="#AceptarModosJuegos" onDragEntered="#SonidoBtn" prefHeight="50.0" prefWidth="124.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 3px;" text="Aceptar">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
          </center>
       </BorderPane>
    </children>

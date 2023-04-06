@@ -948,4 +948,11 @@ public abstract class ModosdeJuego {
              }
     }
     }
+    public void CartaComodin(){
+    Image CartaComodin = new Image("/img/CartaComodin.png");
+    if(!TresCartas){
+    Lista.get(0).setCartaAdelante(CartaComodin);
+
+    }
+    }
 }
