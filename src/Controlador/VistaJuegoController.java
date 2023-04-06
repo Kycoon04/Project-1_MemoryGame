@@ -332,11 +332,7 @@ public class VistaJuegoController implements Initializable {
          Facil.setCastigoPunto(CastigoPunto.isSelected());
          Medio.setCastigoPunto(CastigoPunto.isSelected());
          Dificil.setCastigoPunto(CastigoPunto.isSelected());
-         if(CartaComodin.isSelected()){
-         Facil.CartaComodin();
-         Medio.CartaComodin();
-         Dificil.CartaComodin();
-         }
+
     }
     @FXML
     private void AceptarDificultad(ActionEvent event) {
@@ -456,6 +452,9 @@ public class VistaJuegoController implements Initializable {
     VistaJuego1.toFront();
     Facil.CargarNumero();
     Facil.CargarImagen();
+    if(CartaComodin.isSelected()){
+         Facil.CartaComodin();
+    }
     Facil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
     public void IniciarMedio(){
@@ -480,6 +479,9 @@ public class VistaJuegoController implements Initializable {
     VistaJuego2.toFront();
     Medio.CargarNumero();
     Medio.CargarImagen();
+    if(CartaComodin.isSelected()){
+         Medio.CartaComodin();
+    }
     Medio.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
         public void IniciarDificil(){
@@ -510,6 +512,9 @@ public class VistaJuegoController implements Initializable {
     VistaJuego3.toFront();
     Dificil.CargarNumero();
     Dificil.CargarImagen();
+    if(CartaComodin.isSelected()){
+         Dificil.CartaComodin();
+    }
     Dificil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
     public void cargarParametros(ModosdeJuego obj){

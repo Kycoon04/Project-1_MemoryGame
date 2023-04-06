@@ -427,8 +427,8 @@ public abstract class ModosdeJuego {
                Lista.get(j).setCartaAdelante(vector[i]);
                }
            }
-        }
-        }
+        }   
+    }
     }
     public void Iniciar(Pane VistaFinalizar,TableView<Puntaje> Tabla, int TiempoMax, int TiempoMaxJugador) {
         resetB();
@@ -949,10 +949,14 @@ public abstract class ModosdeJuego {
     }
     }
     public void CartaComodin(){
-    Image CartaComodin = new Image("/img/CartaComodin.png");
-    if(!TresCartas){     
-    Lista.get(0).setCartaAdelante(CartaComodin);
-    Lista.get((NumeroCartas/2)+1).setCartaAdelante(CartaComodin);
-    }
+    Image CartaComodin = new Image("/img/CartaComodin.png");      
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+        Lista.get(i).setCartaAdelante(CartaComodin);
+        }
+        if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
+        Lista.get(i).setCartaAdelante(CartaComodin);
+        }
+        } 
     }
 }
