@@ -310,6 +310,7 @@ public abstract class ModosdeJuego {
         }
         }
         ListaReacomodo.clear();
+        ContCartaComodin=1;
     }
     public void ParejaPvPc(int probabilidad,TableView<Puntaje> Tabla,Pane VistaFinalizar){
         if(TresCartas){
@@ -953,6 +954,8 @@ public abstract class ModosdeJuego {
               }
               if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1){
               CartaComodinPrimero(i);
+              }else{
+              ContCartaComodin++;
               }
              }
     }
