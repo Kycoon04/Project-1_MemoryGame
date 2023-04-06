@@ -36,6 +36,7 @@ public abstract class ModosdeJuego {
     protected boolean CastigoPunto;
     protected boolean TresCartas;
     protected boolean Reacomodo;
+    protected boolean CartaComodin;
     protected int FinalizarJuego;
     protected int NumeroPartidas;
     protected int segundosJugador=0;
@@ -44,6 +45,7 @@ public abstract class ModosdeJuego {
     protected int NumeroCartas;
     protected int NumeroParejas;
     protected int RutaImagen;
+    protected int ContCartaComodin;
     
     public ModosdeJuego() {
         Respaldo =new Image("/img/cartaAtras.png");
@@ -55,6 +57,10 @@ public abstract class ModosdeJuego {
         ContJugador1=0;
         ContJugador2=0;
         NumeroPartidas=0;
+    }
+
+    public void setCartaComodin(boolean CartaComodin) {
+        this.CartaComodin = CartaComodin;
     }
 
     public abstract void CartaSelecionada(String d);
@@ -433,6 +439,7 @@ public abstract class ModosdeJuego {
     public void Iniciar(Pane VistaFinalizar,TableView<Puntaje> Tabla, int TiempoMax, int TiempoMaxJugador) {
         resetB();
         resetC();
+        ContCartaComodin=1;
         getParametrosText().get(10).setText(String.valueOf("Tiempo: "+minutos+":"+segundos));
         setTimeline(new Timeline(new KeyFrame(Duration.seconds(1),e ->{
             if(segundos==59){
@@ -939,24 +946,60 @@ public abstract class ModosdeJuego {
     public void CartaSelecion(int posicion){
     for(int i=0; i<Lista.size();i++){
              if(Lista.get(i).getNumCarta()==posicion){
-                 
               if(!(getLista().get(i).getCartaAtras().getImage()==getLista().get(posicion-1).getCartaAdelante())){
-              new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
-              getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
-              NuevoA(getLista().get(posicion-1).getValor(),getLista().get(i).getCartaAtras());
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
+                NuevoA(getLista().get(posicion-1).getValor(),getLista().get(i).getCartaAtras());
               }
+              
+             if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1){
+                if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
+                   for(int k=0;k<NumeroCartas;k++){  
+                     if(Lista.get(k).getValor()==1){
+                        new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                        getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                        b.setPosicion(Lista.get(k).getCartaAtras());
+                        b.setValor(getLista().get(k).getValor());
+                     }
+                   } 
+                }
+               else{
+                for(int k=0;k<NumeroCartas;k++){  
+                  if(Lista.get(k).getValor()==((NumeroCartas/2)+1)){
+                    new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                    getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                    b.setPosicion(Lista.get(k).getCartaAtras());
+                    b.setValor(getLista().get(k).getValor());
+                  }
+                } 
+               }
+                
+             }
              }
     }
     }
-    public void CartaComodin(){
+    public void CargarComodin(){
     Image CartaComodin = new Image("/img/CartaComodin.png");      
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
         Lista.get(i).setCartaAdelante(CartaComodin);
+        Lista.get(i).setCartaComodin(true);
         }
         if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
         Lista.get(i).setCartaAdelante(CartaComodin);
+        Lista.get(i).setCartaComodin(true);
         }
         } 
+    }
+    public void CartaComodinPrimero(){
+
+      for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
+         new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+         getLista().get(i).getCartaAtras().setImage(getLista().get(NumeroCartas/2+1).getCartaAdelante());
+         b.setPosicion(Lista.get(i).getCartaAtras());
+         b.setValor(getLista().get(NumeroCartas/2+1).getValor());
+        }
+     } 
     }
 }

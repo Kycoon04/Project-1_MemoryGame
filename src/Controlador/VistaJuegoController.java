@@ -332,6 +332,9 @@ public class VistaJuegoController implements Initializable {
          Facil.setCastigoPunto(CastigoPunto.isSelected());
          Medio.setCastigoPunto(CastigoPunto.isSelected());
          Dificil.setCastigoPunto(CastigoPunto.isSelected());
+         Facil.setCartaComodin(CartaComodin.isSelected());
+         Medio.setCartaComodin(CartaComodin.isSelected());
+         Dificil.setCartaComodin(CartaComodin.isSelected());
 
     }
     @FXML
@@ -453,7 +456,7 @@ public class VistaJuegoController implements Initializable {
     Facil.CargarNumero();
     Facil.CargarImagen();
     if(CartaComodin.isSelected()){
-         Facil.CartaComodin();
+         Facil.CargarComodin();
     }
     Facil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
@@ -480,7 +483,7 @@ public class VistaJuegoController implements Initializable {
     Medio.CargarNumero();
     Medio.CargarImagen();
     if(CartaComodin.isSelected()){
-         Medio.CartaComodin();
+         Medio.CargarComodin();
     }
     Medio.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
@@ -513,7 +516,7 @@ public class VistaJuegoController implements Initializable {
     Dificil.CargarNumero();
     Dificil.CargarImagen();
     if(CartaComodin.isSelected()){
-        Dificil.CartaComodin();
+        Dificil.CargarComodin();
     }
     Dificil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }

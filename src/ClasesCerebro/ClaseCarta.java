@@ -7,13 +7,23 @@ public class ClaseCarta { /*hola mundo*/
     private int Valor;
     private ImageView CartaAtras;
     private int NumCarta;
+    private boolean cartaComodin;
 
     public ClaseCarta(ImageView CartaAtras, int NumCarta) {
         this.CartaAtras = CartaAtras;
         this.NumCarta = NumCarta;
+        cartaComodin=false;
     }
     public int getNumCarta() {
         return NumCarta;
+    }
+
+    public boolean isCartaComodin() {
+        return cartaComodin;
+    }
+
+    public void setCartaComodin(boolean cartaComodin) {
+        this.cartaComodin = cartaComodin;
     }
 
     public void setNumCarta(int NumCarta) {
