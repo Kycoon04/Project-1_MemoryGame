@@ -946,7 +946,7 @@ public abstract class ModosdeJuego {
     }
     public void CartaSelecion(int posicion){
     for(int i=0; i<Lista.size();i++){
-             if(Lista.get(i).getNumCarta()==posicion){
+            if(Lista.get(i).getNumCarta()==posicion){
               if(!(getLista().get(i).getCartaAtras().getImage()==getLista().get(posicion-1).getCartaAdelante())){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
                 getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
@@ -954,10 +954,12 @@ public abstract class ModosdeJuego {
               }
               if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1){
               CartaComodinPrimero(i);
-              }else{
-              ContCartaComodin++;
+              } 
+              else if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==2){
+              CartaComodinSegundo(posicion);
               }
-             }
+              ContCartaComodin++;
+            }
     }
     }
     public void CargarComodin(){
@@ -994,5 +996,37 @@ public abstract class ModosdeJuego {
                   }
                 } 
             }
+    }
+    public void CartaComodinSegundo(int posicion){
+        if(b.getValor()>=NumeroCartas/2){
+          for(int i=0; i<Lista.size();i++){
+            if(Lista.get(i).getValor()==(b.getValor()-NumeroParejas)){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                a.setPosicion(Lista.get(i).getCartaAtras());
+                a.setValor(getLista().get(i).getValor());
+            }
+         }
+        }else{
+          for(int i=0; i<Lista.size();i++){
+            if(Lista.get(i).getValor()==(b.getValor()+NumeroParejas)){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                a.setPosicion(Lista.get(i).getCartaAtras());
+                a.setValor(getLista().get(i).getValor());
+            }
+         }
+        }
+        Runnable mx=new Runnable(){
+            @Override
+              public void run() {
+               for(int i=0; i<Lista.size();i++){
+                 if(Lista.get(i).getNumCarta()==posicion){
+                    Lista.get(i).getCartaAtras().setImage(Respaldo);
+                 }
+               }
+              }
+            };
+           setTimeout(mx,1000);   
     }
 }
