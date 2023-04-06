@@ -950,9 +950,9 @@ public abstract class ModosdeJuego {
     }
     public void CartaComodin(){
     Image CartaComodin = new Image("/img/CartaComodin.png");
-    if(!TresCartas){
+    if(!TresCartas){     
     Lista.get(0).setCartaAdelante(CartaComodin);
-
+    Lista.get((NumeroCartas/2)+1).setCartaAdelante(CartaComodin);
     }
     }
 }
