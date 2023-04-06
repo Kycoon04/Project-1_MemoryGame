@@ -539,6 +539,7 @@ public class VistaJuegoController implements Initializable {
     }
     
     public void ReguladorClicks(MouseEvent event, int NumCartas){
+        tiempoMaximoEntreClics = CartaComodin.isSelected() ? 50 : 1000;
         if (contador < NumCartas) { /*Si alguien con mala voluntad para buscar errores podria darle click a 3 cartas a la vez, sabiendo que esta programado para que compare 2 cartas*/
         contador++;     /*Esto lo que hace es que al segundo click seguido se bloquee y no permita dar mas*/
         if (contador == NumCartas) {
