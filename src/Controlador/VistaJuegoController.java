@@ -513,7 +513,7 @@ public class VistaJuegoController implements Initializable {
     Dificil.CargarNumero();
     Dificil.CargarImagen();
     if(CartaComodin.isSelected()){
-         Dificil.CartaComodin();
+        Dificil.CartaComodin();
     }
     Dificil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
