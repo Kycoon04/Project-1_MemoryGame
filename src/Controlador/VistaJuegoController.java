@@ -281,7 +281,6 @@ public class VistaJuegoController implements Initializable {
     private void salirExplicacion(MouseEvent event) {
         VistaPrincipal.toFront();
     }
-    @FXML
     private void SalirModoJuego(ActionEvent event) {
         VistaPrincipal.toFront();
     }
