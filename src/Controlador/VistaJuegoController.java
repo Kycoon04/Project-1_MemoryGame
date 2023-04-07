@@ -216,6 +216,7 @@ public class VistaJuegoController implements Initializable {
     VistaPrincipal.toFront();
     this.TablaJugador1.setCellValueFactory(new PropertyValueFactory("Jugador1"));
     this.TablaJugador2.setCellValueFactory(new PropertyValueFactory("puntaje1"));
+    
     }
     /*BOTONES PANTALLA INICIAL-----------------------------------------------------------------------------------------------------------------------------------------------------*/    
     @FXML
@@ -564,7 +565,4 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private void SonidoBtn(DragEvent event) {
     }
-
-
-    
 }

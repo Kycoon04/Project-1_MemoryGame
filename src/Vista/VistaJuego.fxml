@@ -20,7 +20,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<StackPane maxHeight="740.0" maxWidth="1200.0" minHeight="740.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.VistaJuegoController">
+<StackPane maxHeight="740.0" maxWidth="1200.0" minHeight="740.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1200.0" style="-fx-background-color: transparent;" stylesheets="@BotonSelecionado.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.VistaJuegoController">
    <children>
       <Pane fx:id="VistaFinalizar">
          <children>
@@ -954,7 +954,7 @@
       </BorderPane>
       <BorderPane fx:id="VistaPrincipal" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
          <left>
-            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="306.0" spacing="30.0" BorderPane.alignment="CENTER">
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="30.0" BorderPane.alignment="CENTER">
                <children>
                   <ImageView fitHeight="162.0" fitWidth="317.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -974,22 +974,10 @@
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
-                     </cursor></Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Mostrar Informacion" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
                      </cursor>
-                  </Button>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin></Button>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
@@ -997,13 +985,16 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
+                              <Image url="@../img/CambiarNombre.png" />
                            </image>
                         </ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </Button>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
@@ -1012,13 +1003,16 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
+                              <Image url="@../img/ModoJuego.png" />
                            </image>
                         </ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </Button>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
@@ -1027,13 +1021,16 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
+                              <Image url="@../img/Dificultad.png" />
                            </image>
                         </ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </Button>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
@@ -1042,13 +1039,16 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
+                              <Image url="@../img/Puntajes.png" />
                            </image>
                         </ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </Button>
                   <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
@@ -1057,13 +1057,34 @@
                      <graphic>
                         <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
+                              <Image url="@../img/explicacion.png" />
                            </image>
                         </ImageView>
                      </graphic>
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Proyecto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
                   </Button>
                </children>
                <BorderPane.margin>
