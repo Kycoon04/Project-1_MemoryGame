@@ -1178,16 +1178,16 @@
                         <Font name="System Bold" size="28.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="campo1" layoutX="136.0" layoutY="235.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <TextField fx:id="campo2" layoutX="462.0" layoutY="235.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <TextField fx:id="campo1" layoutX="136.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <TextField fx:id="campo2" layoutX="462.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
                      <font>
                         <Font name="Consolas" size="24.0" />
                      </font>
                   </Text>
-                  <TextField fx:id="campo3" layoutX="134.0" layoutY="483.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <TextField fx:id="campo4" layoutX="460.0" layoutY="483.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <Button fx:id="ElegirPvsP" contentDisplay="BOTTOM" layoutX="607.0" layoutY="292.0" mnemonicParsing="false" onAction="#ElegirPersonavsPersona" prefHeight="50.0" prefWidth="124.0" text="Elegir">
+                  <TextField fx:id="campo3" layoutX="134.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <TextField fx:id="campo4" layoutX="460.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <Button fx:id="ElegirPvsP" contentDisplay="BOTTOM" layoutX="607.0" layoutY="297.0" mnemonicParsing="false" onAction="#ElegirPersonavsPersona" prefHeight="50.0" prefWidth="124.0" text="Elegir">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -1195,17 +1195,17 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <CheckBox fx:id="checkPvsP" layoutX="131.0" layoutY="169.0" mnemonicParsing="false" onAction="#CheckPersonavsPersona" prefHeight="35.0" prefWidth="361.0" style="-fx-background-insets: 0;" text="Persona vs Persona">
+                  <CheckBox fx:id="checkPvsP" layoutX="131.0" layoutY="174.0" mnemonicParsing="false" onAction="#CheckPersonavsPersona" prefHeight="35.0" prefWidth="361.0" style="-fx-background-insets: 0;" text="Persona vs Persona">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </CheckBox>
-                  <CheckBox fx:id="checkPvsPc" layoutX="134.0" layoutY="410.0" mnemonicParsing="false" onAction="#CheckPersonavsPc" prefHeight="30.0" prefWidth="200.0" text="Persona vs Pc">
+                  <CheckBox fx:id="checkPvsPc" layoutX="134.0" layoutY="415.0" mnemonicParsing="false" onAction="#CheckPersonavsPc" prefHeight="30.0" prefWidth="200.0" text="Persona vs Pc">
                      <font>
                         <Font name="System Bold" size="20.0" />
                      </font>
                   </CheckBox>
-                  <Button fx:id="ElegirPvsPc" contentDisplay="BOTTOM" layoutX="605.0" layoutY="540.0" mnemonicParsing="false" onAction="#ElegirPersonavsPc" prefHeight="50.0" prefWidth="124.0" text="Elegir">
+                  <Button fx:id="ElegirPvsPc" contentDisplay="BOTTOM" layoutX="605.0" layoutY="545.0" mnemonicParsing="false" onAction="#ElegirPersonavsPc" prefHeight="50.0" prefWidth="124.0" text="Elegir">
                      <font>
                         <Font size="18.0" />
                      </font>
