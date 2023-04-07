@@ -277,15 +277,12 @@ public class VistaJuegoController implements Initializable {
             default:break;
         }
     }
-    @FXML
     private void salirExplicacion(MouseEvent event) {
         VistaPrincipal.toFront();
     }
-    @FXML
     private void SalirDificultad(ActionEvent event) {
         VistaPrincipal.toFront();
     }
-        @FXML
     private void salirTabla(MouseEvent event) {
         VistaPrincipal.toFront();
     }
@@ -550,8 +547,5 @@ public class VistaJuegoController implements Initializable {
                 break;
         }
     }
-    }
-    @FXML
-    private void SonidoBtn(DragEvent event) {
     }
 }
