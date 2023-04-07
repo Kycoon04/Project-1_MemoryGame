@@ -49,8 +49,6 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private BorderPane VistaDificultad;
     @FXML
-    private ImageView informacion;
-    @FXML
     private Button Salir;
     @FXML
     private TextField campo1; /*CAMPO PARA INSERTAR NOMBRE*/    
@@ -221,7 +219,7 @@ public class VistaJuegoController implements Initializable {
     }
     /*BOTONES PANTALLA INICIAL-----------------------------------------------------------------------------------------------------------------------------------------------------*/    
     @FXML
-    private void MostrarInformacion(MouseEvent event) {
+    private void MostrarInformacion(ActionEvent event) {
          VistaInformacion.toFront();
     }
     @FXML
@@ -566,4 +564,7 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private void SonidoBtn(DragEvent event) {
     }
+
+
+    
 }

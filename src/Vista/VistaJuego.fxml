@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
@@ -96,336 +97,6 @@
             </Pane>
          </children>
       </Pane>
-      <BorderPane fx:id="VistaInformacion" prefHeight="720.0" prefWidth="1180.0">
-         <center>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1180.0">
-               <children>
-                  <AnchorPane layoutX="-10.0" layoutY="-13.0" prefHeight="771.0" prefWidth="306.0" style="-fx-background-color: #94dce6;">
-                     <children>
-                        <Pane layoutY="243.0" prefHeight="307.0" prefWidth="395.0" style="-fx-background-color: #23417D;">
-                           <children>
-                              <ImageView fitHeight="223.0" fitWidth="384.0" layoutX="5.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/logo.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="252.0" prefWidth="395.0" style="-fx-background-color: #0286AD;" />
-                        <Pane layoutY="526.0" prefHeight="245.0" prefWidth="395.0" style="-fx-background-color: #11254A;">
-                           <children>
-                              <ImageView fitHeight="59.0" fitWidth="62.0" layoutX="173.0" layoutY="172.0" onMouseClicked="#VolverInformacion" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/Volver.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ImageView>
-                           </children></Pane>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="395.0" prefHeight="757.0" prefWidth="802.0" style="-fx-background-color: white;">
-                     <children>
-                        <ImageView fitHeight="172.0" fitWidth="270.0" layoutX="532.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/LogoUNA.png" />
-                           </image>
-                        </ImageView>
-                        <Text layoutX="307.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto #1" textAlignment="CENTER" wrappingWidth="188.13671875">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso: Programación II" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profesor: MATI Hailor J. Romero Sandí" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante: José Manuel Valverde Valverde" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciclo I 2023" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaJuego2" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
-         <top>
-            <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button layoutX="1079.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-               </children></Pane>
-         </top>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button contentDisplay="BOTTOM" layoutX="65.0" layoutY="599.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Pane layoutY="-19.0" prefHeight="317.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
-                  <Pane layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutX="1159.0" layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutX="1159.0" layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Button layoutX="266.0" layoutY="137.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta2Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="152.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="445.0" layoutY="137.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta3Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="152.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="624.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta4Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="629.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="803.0" layoutY="139.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta5Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="808.0" layoutY="154.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="266.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta8Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="445.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta9Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="624.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta10Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="629.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="803.0" layoutY="364.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta11Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="808.0" layoutY="379.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="982.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta6Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="987.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="982.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta12Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="987.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="83.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta1Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="83.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta7Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Pane layoutX="1159.0" prefHeight="301.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
-         <top>
-            <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: #11254A;" BorderPane.alignment="CENTER">
-               <children>
-                  <Text fx:id="tiempo" fill="WHITE" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="username1" fill="RED" layoutX="295.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="username2" fill="WHITE" layoutX="658.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fill="WHITE" layoutX="577.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="1079.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Text fx:id="pts1" fill="WHITE" layoutX="445.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="pts2" fill="WHITE" layoutX="814.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </top>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button contentDisplay="BOTTOM" layoutX="64.0" layoutY="597.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Pane layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Button layoutX="353.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="532.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="711.0" layoutY="139.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="154.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="353.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="532.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="711.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Pane prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
-                  <Pane layoutX="1159.0" layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutX="1159.0" layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutX="1159.0" prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
       <BorderPane fx:id="VistaJuego3" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
          <top>
             <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
@@ -800,103 +471,6 @@
             </Pane>
          </center>
       </BorderPane>
-      <BorderPane fx:id="VistaPrincipal" maxHeight="720.0" maxWidth="1200.0" minHeight="720.0" minWidth="1200.0" prefHeight="720.0" prefWidth="1200.0">
-         <left>
-            <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane layoutX="-4.0" layoutY="-7.0" prefHeight="252.0" prefWidth="401.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutY="242.0" prefHeight="272.0" prefWidth="396.0" style="-fx-background-color: #23417D;">
-                     <children>
-                        <ImageView fitHeight="223.0" fitWidth="379.0" layoutX="9.0" layoutY="32.0" nodeOrientation="INHERIT" pickOnBounds="true">
-                           <image>
-                              <Image url="@../img/logo.png" />
-                           </image>
-                        </ImageView>
-                     </children>
-                  </Pane>
-                  <Pane layoutY="512.0" prefHeight="246.0" prefWidth="396.0" style="-fx-background-color: #11254A;" />
-                  <ImageView fx:id="informacion" fitHeight="50.0" fitWidth="50.0" layoutX="173.0" layoutY="656.0" onMouseClicked="#MostrarInformacion" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/Informacion.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-         </left>
-         <center>
-            <VBox maxHeight="720.0" maxWidth="784.0" minHeight="720.0" minWidth="784.0" prefHeight="720.0" prefWidth="784.0" BorderPane.alignment="CENTER">
-               <children>
-                  <Pane>
-                     <children>
-                        <AnchorPane layoutX="-12.0" layoutY="-20.0" maxHeight="764.0" maxWidth="821.0" minHeight="764.0" minWidth="821.0" prefHeight="764.0" prefWidth="821.0" style="-fx-background-color: White;">
-                           <children>
-                              <ImageView fitHeight="208.0" fitWidth="208.0" layoutX="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/cartaLogo.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="DEFAULT" />
-                                 </cursor>
-                              </ImageView>
-                              <Button contentDisplay="BOTTOM" layoutX="117.0" layoutY="336.0" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: white; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Iniciar Juego">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                              <Button contentDisplay="BOTTOM" layoutX="117.0" layoutY="437.0" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Dificultad">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                              <Button contentDisplay="BOTTOM" layoutX="117.0" layoutY="538.0" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo de Juego">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                              <Button contentDisplay="BOTTOM" layoutX="483.0" layoutY="538.0" mnemonicParsing="false" onAction="#Explicacion" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Explicación">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                              <Button contentDisplay="BOTTOM" layoutX="483.0" layoutY="330.0" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Jugadores">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                              <Button contentDisplay="BOTTOM" layoutX="483.0" layoutY="437.0" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Tabla de puntajes">
-                                 <font>
-                                    <Font name="Consolas" size="18.0" />
-                                 </font>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </Button>
-                           </children>
-                        </AnchorPane>
-                     </children>
-                  </Pane>
-               </children>
-            </VBox>
-         </center>
-      </BorderPane>
       <BorderPane fx:id="VistaDificultad" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
          <left>
             <AnchorPane prefHeight="720.0" prefWidth="396.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
@@ -1048,5 +622,461 @@
             </Pane>
          </center>
       </BorderPane>
+      <BorderPane fx:id="VistaInformacion" prefHeight="720.0" prefWidth="1180.0">
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1180.0">
+               <children>
+                  <AnchorPane layoutX="-10.0" layoutY="-13.0" prefHeight="771.0" prefWidth="306.0" style="-fx-background-color: #94dce6;">
+                     <children>
+                        <Pane layoutY="243.0" prefHeight="307.0" prefWidth="395.0" style="-fx-background-color: #23417D;">
+                           <children>
+                              <ImageView fitHeight="223.0" fitWidth="384.0" layoutX="5.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/logo.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="252.0" prefWidth="395.0" style="-fx-background-color: #0286AD;" />
+                        <Pane layoutY="526.0" prefHeight="245.0" prefWidth="395.0" style="-fx-background-color: #11254A;">
+                           <children>
+                              <ImageView fitHeight="59.0" fitWidth="62.0" layoutX="173.0" layoutY="172.0" onMouseClicked="#VolverInformacion" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Volver.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children></Pane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="395.0" prefHeight="757.0" prefWidth="765.0" style="-fx-background-color: white;">
+                     <children>
+                        <ImageView fitHeight="172.0" fitWidth="270.0" layoutX="532.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/LogoUNA.png" />
+                           </image>
+                        </ImageView>
+                        <Text layoutX="307.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto #1" textAlignment="CENTER" wrappingWidth="188.13671875">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="246.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso: Programación II" textAlignment="CENTER" wrappingWidth="311.0">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="246.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profesor: MATI Hailor J. Romero Sandí" textAlignment="CENTER" wrappingWidth="311.0">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="246.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante: José Manuel Valverde Valverde" textAlignment="CENTER" wrappingWidth="311.0">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text layoutX="246.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciclo I 2023" textAlignment="CENTER" wrappingWidth="311.0">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
+         <top>
+            <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: #11254A;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="tiempo" fill="WHITE" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="username1" fill="RED" layoutX="295.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="username2" fill="WHITE" layoutX="658.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="577.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="1079.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Text fx:id="pts1" fill="WHITE" layoutX="445.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="pts2" fill="WHITE" layoutX="814.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button contentDisplay="BOTTOM" layoutX="64.0" layoutY="597.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
+                  <Pane layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
+                  <Button layoutX="353.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="532.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="711.0" layoutY="139.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="154.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="353.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="532.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="711.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
+                  <Pane layoutX="1159.0" layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
+                  <Pane layoutX="1159.0" layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
+                  <Pane layoutX="1159.0" prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaJuego2" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
+         <top>
+            <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="1079.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children></Pane>
+         </top>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button contentDisplay="BOTTOM" layoutX="65.0" layoutY="599.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Pane layoutY="-19.0" prefHeight="317.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
+                  <Pane layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
+                  <Pane layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
+                  <Pane layoutX="1159.0" layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
+                  <Pane layoutX="1159.0" layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
+                  <Button layoutX="266.0" layoutY="137.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta2Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="152.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="445.0" layoutY="137.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta3Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="152.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="624.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta4Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="629.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="803.0" layoutY="139.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta5Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="808.0" layoutY="154.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="266.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta8Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="445.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta9Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="450.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="624.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta10Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="629.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="803.0" layoutY="364.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta11Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="808.0" layoutY="379.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="982.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta6Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="987.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="982.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta12Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="987.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="83.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta1Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="83.0" layoutY="363.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta7Juego2" fitHeight="150.0" fitWidth="200.0" layoutX="88.0" layoutY="378.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Pane layoutX="1159.0" prefHeight="301.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaPrincipal" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="306.0" spacing="30.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="162.0" fitWidth="317.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Mostrar Informacion" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="55.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </Pane>
+         </center></BorderPane>
    </children>
 </StackPane>
