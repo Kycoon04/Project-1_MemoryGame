@@ -956,12 +956,12 @@
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="30.0" BorderPane.alignment="CENTER">
                <children>
-                  <ImageView fitHeight="162.0" fitWidth="317.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="285.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -978,7 +978,7 @@
                      <VBox.margin>
                         <Insets left="10.0" />
                      </VBox.margin></Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="285.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -996,7 +996,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="285.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1014,7 +1014,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="285.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1032,7 +1032,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="285.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1050,7 +1050,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="285.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1068,7 +1068,7 @@
                         <Insets left="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="285.0" style="-fx-background-color: #323339; -fx-background-radius: 10;" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="285.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
