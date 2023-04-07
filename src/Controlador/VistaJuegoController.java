@@ -226,7 +226,6 @@ public class VistaJuegoController implements Initializable {
     private void VistaPonerNombre(ActionEvent event) {
         VistaPonerNombre.toFront();
     }
-    @FXML
     private void VolverInformacion(MouseEvent event) {
         VistaPrincipal.toFront();
     }

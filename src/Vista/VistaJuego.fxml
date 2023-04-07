@@ -12,7 +12,6 @@
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
@@ -292,73 +291,6 @@
                   </ImageView>
                </children>
             </Pane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaInformacion" prefHeight="720.0" prefWidth="1180.0">
-         <center>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="757.0" prefWidth="1180.0">
-               <children>
-                  <AnchorPane layoutX="-10.0" layoutY="-13.0" prefHeight="771.0" prefWidth="306.0" style="-fx-background-color: #94dce6;">
-                     <children>
-                        <Pane layoutY="243.0" prefHeight="307.0" prefWidth="395.0" style="-fx-background-color: #23417D;">
-                           <children>
-                              <ImageView fitHeight="223.0" fitWidth="384.0" layoutX="5.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/logo.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </Pane>
-                        <Pane prefHeight="252.0" prefWidth="395.0" style="-fx-background-color: #0286AD;" />
-                        <Pane layoutY="526.0" prefHeight="245.0" prefWidth="395.0" style="-fx-background-color: #11254A;">
-                           <children>
-                              <ImageView fitHeight="59.0" fitWidth="62.0" layoutX="173.0" layoutY="172.0" onMouseClicked="#VolverInformacion" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../img/Volver.png" />
-                                 </image>
-                                 <cursor>
-                                    <Cursor fx:constant="HAND" />
-                                 </cursor>
-                              </ImageView>
-                           </children></Pane>
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="395.0" prefHeight="757.0" prefWidth="765.0" style="-fx-background-color: white;">
-                     <children>
-                        <ImageView fitHeight="172.0" fitWidth="270.0" layoutX="532.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/LogoUNA.png" />
-                           </image>
-                        </ImageView>
-                        <Text layoutX="307.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto #1" textAlignment="CENTER" wrappingWidth="188.13671875">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Curso: Programación II" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profesor: MATI Hailor J. Romero Sandí" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="470.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante: José Manuel Valverde Valverde" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text layoutX="246.0" layoutY="584.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciclo I 2023" textAlignment="CENTER" wrappingWidth="311.0">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
          </center>
       </BorderPane>
       <BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
@@ -1687,6 +1619,187 @@
                         <Image url="@../img/cartaLogo.png" />
                      </image>
                   </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaInformacion" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/CambiarNombre.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ModoJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Dificultad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Puntajes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/explicacion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Proyecto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <ImageView fitHeight="172.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/LogoUNA.png" />
+                     </image>
+                  </ImageView>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Proyecto #1" textAlignment="CENTER" wrappingWidth="188.13671875">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Curso: Programación II" textAlignment="CENTER" wrappingWidth="311.0">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profesor: MATI Hailor J. Romero Sandí" textAlignment="CENTER" wrappingWidth="311.0">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante: José Manuel Valverde Valverde" textAlignment="CENTER" wrappingWidth="311.0">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ciclo I 2023" textAlignment="CENTER" wrappingWidth="311.0">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
                </children>
             </Pane>
          </center>
