@@ -2,6 +2,32 @@
     -fx-background-color: #323339;
     -fx-background-radius:10;
 }
+.button#ElegirPvsPc:hover{
+    -fx-background-color: #323339;
+    -fx-text-fill: white;
+    -fx-background-radius:10;
+}
+.button#ElegirPvsP:hover{
+    -fx-background-color: #323339;
+    -fx-text-fill: white;
+    -fx-background-radius:10;
+}
 .button{
     -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+.check-box .box{
+    -fx-background-color: transparent;
+    -fx-border-color: #323339;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}
+
+.text-field{
+    -fx-background-color: transparent;
+    -fx-border-color: #323339;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-radius: 5px;
 }

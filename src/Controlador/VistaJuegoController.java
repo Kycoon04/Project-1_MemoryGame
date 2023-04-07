@@ -49,8 +49,6 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private BorderPane VistaDificultad;
     @FXML
-    private Button Salir;
-    @FXML
     private TextField campo1; /*CAMPO PARA INSERTAR NOMBRE*/    
     @FXML
     private TextField campo2; /*CAMPO PARA INSERTAR NOMBRE*/  
@@ -216,6 +214,7 @@ public class VistaJuegoController implements Initializable {
     VistaPrincipal.toFront();
     this.TablaJugador1.setCellValueFactory(new PropertyValueFactory("Jugador1"));
     this.TablaJugador2.setCellValueFactory(new PropertyValueFactory("puntaje1"));
+    VistaPonerNombre.setPickOnBounds(true);
     
     }
     /*BOTONES PANTALLA INICIAL-----------------------------------------------------------------------------------------------------------------------------------------------------*/    
@@ -269,10 +268,6 @@ public class VistaJuegoController implements Initializable {
     
     /*BOTONES SALIR----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @FXML
-    private void salirPonerNombre(ActionEvent event) {
-    VistaPrincipal.toFront();
-    }
-    @FXML
     private void SalirJuego(ActionEvent event) {
     VistaPrincipal.toFront();
         switch(CantidadCartas.getValue()){
@@ -305,13 +300,11 @@ public class VistaJuegoController implements Initializable {
     private void ElegirPersonavsPersona(ActionEvent event) {
         username1.setText(campo1.getText());
         username2.setText(campo2.getText());
-        VistaPrincipal.toFront();
     }
         @FXML
     private void ElegirPersonavsPc(ActionEvent event) {
         username1.setText(campo3.getText());
         username2.setText(campo4.getText());
-        VistaPrincipal.toFront();
     }
     @FXML
     private void AceptarModosJuegos(ActionEvent event) { /*hols*/
