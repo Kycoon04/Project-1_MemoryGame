@@ -12,8 +12,6 @@ import javafx.scene.layout.BorderPane;
 public class ModoRevision3Controller implements Initializable {
 
     @FXML
-    private BorderPane VistaJuego3;
-    @FXML
     private ImageView Carta2Juego3;
     @FXML
     private ImageView Carta3Juego3;
@@ -49,6 +47,8 @@ public class ModoRevision3Controller implements Initializable {
     private ImageView Carta18Juego3;
     @FXML
     private ImageView Carta17Juego3;
+    @FXML
+    private BorderPane ModoRevision3;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
     }    
