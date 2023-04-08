@@ -13,7 +13,6 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
@@ -21,19 +20,18 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.DragEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-
 public class VistaJuegoController implements Initializable {
     int contador=0;
     long tiempoMaximoEntreClics = 1000;
     ModosdeJuego Facil = new ModoJuego1();
     ModosdeJuego Medio = new ModoJuego2();
     ModosdeJuego Dificil = new ModoJuego3();
+    
     
     /*ATRIBUTOS JAVAFX-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @FXML
@@ -211,7 +209,7 @@ public class VistaJuegoController implements Initializable {
     this.TablaJugador1.setCellValueFactory(new PropertyValueFactory("Jugador1"));
     this.TablaJugador2.setCellValueFactory(new PropertyValueFactory("puntaje1"));
     VistaPonerNombre.setPickOnBounds(true);
-    
+        
     }
     /*BOTONES PANTALLA INICIAL-----------------------------------------------------------------------------------------------------------------------------------------------------*/    
     @FXML
@@ -519,5 +517,9 @@ public class VistaJuegoController implements Initializable {
         campo1.setDisable(false);
         campo2.setDisable(false);
         }
+    }
+    @FXML
+    private void Sonidobtn(MouseEvent event) {
+        
     }
 }

@@ -97,7 +97,7 @@
             </Pane>
          </children>
       </Pane>
-      <BorderPane fx:id="VistaPrincipal" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+      <BorderPane fx:id="VistaDificultad" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
                <children>
@@ -106,154 +106,7 @@
                         <Image url="@../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin></Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/CambiarNombre.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/ModoJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Dificultad.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Puntajes.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/explicacion.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Proyecto.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-               </children>
-               <BorderPane.margin>
-                  <Insets top="15.0" />
-               </BorderPane.margin>
-            </VBox>
-         </left>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-            </Pane>
-         </center></BorderPane>
-      <BorderPane fx:id="tablaPuntajes" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
-         <left>
-            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -271,7 +124,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -289,7 +142,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -307,7 +160,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -325,7 +178,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -343,7 +196,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -361,7 +214,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -391,17 +244,581 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
                <children>
-                  <Text layoutX="279.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Tabla de Puntajes" textAlignment="RIGHT" wrappingWidth="290.13671875">
+                  <Text layoutX="303.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de Dificultad">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
                   </Text>
-                  <TableView fx:id="Tabla" layoutX="273.0" layoutY="59.0" pickOnBounds="false" prefHeight="637.0" prefWidth="303.0" style="-fx-background-color: white;">
-                     <columns>
-                        <TableColumn fx:id="TablaJugador1" editable="false" prefWidth="147.0" sortable="false" style="-fx-border-width: 0px 0px 1px 1px; -fx-border-color: black; -fx-background-color: white; -fx-font-family: system; -fx-font-size: 15px; -fx-text-alignment: CENTER;" text="Nombre Jugador " />
-                        <TableColumn fx:id="TablaJugador2" editable="false" prefWidth="154.0" resizable="false" sortable="false" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: black; -fx-background-color: white; -fx-font-family: system; -fx-font-size: 15px; -fx-text-alignment: CENTER;" text="Puntos Jugador " />
-                     </columns>
-                  </TableView>
+                  <Text layoutX="268.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione la cantidad de cartas " textAlignment="CENTER" wrappingWidth="326.583984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="219.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo de partida (Minutos)" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="219.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo por jugador (Segundos)" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="219.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reacomodo automático de las cartas faltantes a medio juego" textAlignment="CENTER" wrappingWidth="424.583984375">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="BotonDificultadFacil" layoutX="110.0" layoutY="121.0" mnemonicParsing="false" onAction="#Facil" prefHeight="33.0" prefWidth="210.0" text="Dificultad Facil">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="BotonDificultadMedia" layoutX="335.0" layoutY="121.0" mnemonicParsing="false" onAction="#Media" prefHeight="33.0" prefWidth="246.0" text="Dificultad Media">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="BotonDificultadDificil" layoutX="575.0" layoutY="121.0" mnemonicParsing="false" onAction="#Dificil" prefHeight="33.0" prefWidth="224.0" text="Dificultad Dificil">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <ChoiceBox fx:id="CantidadCartas" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="242.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="TiempoMaxTotal" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="376.0" prefWidth="150.0" />
+                  <ChoiceBox fx:id="TiempoMaxJugador" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="517.0" prefWidth="150.0" />
+                  <CheckBox fx:id="botonCartasAutomaticas" layoutX="421.0" layoutY="638.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaModosdeJuego" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/CambiarNombre.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ModoJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Dificultad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Puntajes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/explicacion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Proyecto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Text layoutX="281.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección Modos de juego">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Text>
+                  <CheckBox fx:id="CartaComodin" layoutX="234.0" layoutY="293.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="194.0" text="Carta Comodín">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="PuntoAdicional" layoutX="234.0" layoutY="494.0" mnemonicParsing="false" text="Punto adicional">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="CastigoPunto" layoutX="594.0" layoutY="293.0" mnemonicParsing="false" text="Castigo al fallar">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="TresCartas" layoutX="594.0" layoutY="478.0" mnemonicParsing="false" text="Tres cartas">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/CartaComodin.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/PuntoAdicional.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="447.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Castigo.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="447.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Trios.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaPonerNombre" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/CambiarNombre.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ModoJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Dificultad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Puntajes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/explicacion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Proyecto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Text layoutX="280.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de jugadores">
+                     <font>
+                        <Font name="System Bold" size="28.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="campo1" layoutX="136.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <TextField fx:id="campo2" layoutX="462.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="campo3" layoutX="134.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <TextField fx:id="campo4" layoutX="460.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
+                  <CheckBox fx:id="checkPvsP" layoutX="131.0" layoutY="174.0" mnemonicParsing="false" onAction="#CheckPersonavsPersona" prefHeight="35.0" prefWidth="361.0" style="-fx-background-insets: 0;" text="Persona vs Persona">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="checkPvsPc" layoutX="134.0" layoutY="415.0" mnemonicParsing="false" onAction="#CheckPersonavsPc" prefHeight="30.0" prefWidth="200.0" text="Persona vs Pc">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaExplicacion" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <left>
+            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/iconIniciarJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/CambiarNombre.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ModoJuego.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Dificultad.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Puntajes.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/explicacion.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/Proyecto.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <TextArea layoutX="82.0" layoutY="192.0" prefHeight="477.0" prefWidth="699.0" style="-fx-background-color: white;" text="El objetivo del juego es encontrar todos los pares de cartas antes que tu oponente, ya sea la&#10;computadora o un amigo. Este juego tiene varias opciones de personalización, como la cantidad de&#10;cartas con las que se jugará. Puedes elegir entre tres opciones de cantidad de cartas: 6, 12 o 18.&#10;También puedes configurar el tiempo máximo de juego, lo que significa que el juego terminará después&#10;de un cierto período de tiempo, independientemente de cuántas cartas hayas encontrado.&#10;Otra característica interesante de este juego es que tiene un reacomodo &#10;automático de las cartas faltantes a medio juego. Esto significa que si te has quedado sin cartas &#10;para emparejar, el juego reorganizará automáticamente las cartas restantes para que puedas continuar &#10;jugando. Este juego también tiene un modo de juego contra la computadora, lo que significa que puedes&#10;jugar solo contra la computadora en diferentes niveles de dificultad. Los niveles de dificultad están &#10;determinados por la propabilidad de encontrar parejas. Si eliges el nivel fácil, jugarás &#10;con seis cartas, mientras que el nivel medio utiliza doce cartas y el nivel difícil utiliza dieciocho&#10;cartas.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="357.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaLogo.png" />
+                     </image>
+                  </ImageView>
                </children>
             </Pane>
          </center>
@@ -415,7 +832,7 @@
                         <Image url="@../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -433,7 +850,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -451,7 +868,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -469,7 +886,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -487,7 +904,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -505,7 +922,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -523,7 +940,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -587,7 +1004,7 @@
             </Pane>
          </center>
       </BorderPane>
-      <BorderPane fx:id="VistaExplicacion" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+      <BorderPane fx:id="tablaPuntajes" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
                <children>
@@ -596,7 +1013,7 @@
                         <Image url="@../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -614,7 +1031,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -632,7 +1049,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -650,7 +1067,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -668,7 +1085,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -686,7 +1103,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -704,7 +1121,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -734,146 +1151,20 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
                <children>
-                  <TextArea layoutX="82.0" layoutY="192.0" prefHeight="477.0" prefWidth="699.0" style="-fx-background-color: white;" text="El objetivo del juego es encontrar todos los pares de cartas antes que tu oponente, ya sea la&#10;computadora o un amigo. Este juego tiene varias opciones de personalización, como la cantidad de&#10;cartas con las que se jugará. Puedes elegir entre tres opciones de cantidad de cartas: 6, 12 o 18.&#10;También puedes configurar el tiempo máximo de juego, lo que significa que el juego terminará después&#10;de un cierto período de tiempo, independientemente de cuántas cartas hayas encontrado.&#10;Otra característica interesante de este juego es que tiene un reacomodo &#10;automático de las cartas faltantes a medio juego. Esto significa que si te has quedado sin cartas &#10;para emparejar, el juego reorganizará automáticamente las cartas restantes para que puedas continuar &#10;jugando. Este juego también tiene un modo de juego contra la computadora, lo que significa que puedes&#10;jugar solo contra la computadora en diferentes niveles de dificultad. Los niveles de dificultad están &#10;determinados por la propabilidad de encontrar parejas. Si eliges el nivel fácil, jugarás &#10;con seis cartas, mientras que el nivel medio utiliza doce cartas y el nivel difícil utiliza dieciocho&#10;cartas.">
+                  <Text layoutX="279.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Tabla de Puntajes" textAlignment="RIGHT" wrappingWidth="290.13671875">
                      <font>
-                        <Font size="14.0" />
+                        <Font name="System Bold" size="24.0" />
                      </font>
-                  </TextArea>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="357.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaLogo.png" />
-                     </image>
-                  </ImageView>
+                  </Text>
+                  <TableView fx:id="Tabla" layoutX="273.0" layoutY="59.0" pickOnBounds="false" prefHeight="637.0" prefWidth="303.0" style="-fx-background-color: white;">
+                     <columns>
+                        <TableColumn fx:id="TablaJugador1" editable="false" prefWidth="147.0" sortable="false" style="-fx-border-width: 0px 0px 1px 1px; -fx-border-color: black; -fx-background-color: white; -fx-font-family: system; -fx-font-size: 15px; -fx-text-alignment: CENTER;" text="Nombre Jugador " />
+                        <TableColumn fx:id="TablaJugador2" editable="false" prefWidth="154.0" resizable="false" sortable="false" style="-fx-border-width: 0px 1px 1px 1px; -fx-border-color: black; -fx-background-color: white; -fx-font-family: system; -fx-font-size: 15px; -fx-text-alignment: CENTER;" text="Puntos Jugador " />
+                     </columns>
+                  </TableView>
                </children>
             </Pane>
          </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaJuego1" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-               <children>
-                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button layoutX="294.0" layoutY="92.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="109.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="503.0" layoutY="95.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="111.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="722.0" layoutY="92.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="731.0" layoutY="110.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="294.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="503.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="722.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="731.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT" textFill="#070707">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-               </children>
-            </Pane>
-         </center>
-         <top>
-            <Pane prefHeight="59.0" prefWidth="1160.0" style="-fx-background-color: #333333; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1161.0" spacing="65.0">
-                     <children>
-                        <Text fx:id="tiempo" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text fx:id="username1" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text fx:id="pts1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </Text>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text fx:id="username2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                        <Text fx:id="pts2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                           <font>
-                              <Font name="Consolas" size="24.0" />
-                           </font>
-                        </Text>
-                     </children>
-                  </HBox>
-               </children>
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-            </Pane>
-         </top>
       </BorderPane>
       <BorderPane fx:id="VistaJuego3" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: transparent;">
          <center>
@@ -882,17 +1173,9 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
                <children>
-                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
+                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" onMouseEntered="#Sonidobtn" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
                      <font>
                         <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -1060,6 +1343,14 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
+                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" onMouseEntered="#Sonidobtn" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                </children>
             </Pane>
          </center>
@@ -1078,17 +1369,9 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
                <children>
-                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
+                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" onMouseEntered="#Sonidobtn" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
                      <font>
                         <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
                      </font>
                      <cursor>
                         <Cursor fx:constant="HAND" />
@@ -1202,6 +1485,14 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
+                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" onMouseEntered="#Sonidobtn" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT">
+                     <font>
+                        <Font name="Consolas" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                </children>
             </Pane>
          </center>
@@ -1213,182 +1504,134 @@
             </Pane>
          </top>
       </BorderPane>
-      <BorderPane fx:id="VistaPonerNombre" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
-         <left>
-            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/CambiarNombre.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/ModoJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Dificultad.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Puntajes.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/explicacion.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Proyecto.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-               </children>
-               <BorderPane.margin>
-                  <Insets top="15.0" />
-               </BorderPane.margin>
-            </VBox>
-         </left>
+      <BorderPane fx:id="VistaJuego1" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
                <BorderPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
                <children>
-                  <Text layoutX="280.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de jugadores">
+                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" onMouseEntered="#Sonidobtn" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
                      <font>
-                        <Font name="System Bold" size="28.0" />
+                        <Font name="Consolas" size="18.0" />
                      </font>
-                  </Text>
-                  <TextField fx:id="campo1" layoutX="136.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <TextField fx:id="campo2" layoutX="462.0" layoutY="240.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="294.0" layoutY="92.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="109.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="503.0" layoutY="95.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="111.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="722.0" layoutY="92.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="731.0" layoutY="110.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="294.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="303.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="503.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="512.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="722.0" layoutY="326.0" mnemonicParsing="false" prefHeight="184.0" prefWidth="145.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="731.0" layoutY="343.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="1058.0" layoutY="540.0" mnemonicParsing="false" onAction="#SalirJuego" onMouseEntered="#Sonidobtn" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px  0px;" text="EXIT" textFill="#070707">
                      <font>
                         <Font name="Consolas" size="24.0" />
                      </font>
-                  </Text>
-                  <TextField fx:id="campo3" layoutX="134.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <TextField fx:id="campo4" layoutX="460.0" layoutY="488.0" prefHeight="38.0" prefWidth="269.0" promptText="Escriba el Nombre " />
-                  <CheckBox fx:id="checkPvsP" layoutX="131.0" layoutY="174.0" mnemonicParsing="false" onAction="#CheckPersonavsPersona" prefHeight="35.0" prefWidth="361.0" style="-fx-background-insets: 0;" text="Persona vs Persona">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="checkPvsPc" layoutX="134.0" layoutY="415.0" mnemonicParsing="false" onAction="#CheckPersonavsPc" prefHeight="30.0" prefWidth="200.0" text="Persona vs Pc">
-                     <font>
-                        <Font name="System Bold" size="20.0" />
-                     </font>
-                  </CheckBox>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
                </children>
             </Pane>
          </center>
+         <top>
+            <Pane prefHeight="59.0" prefWidth="1160.0" style="-fx-background-color: #333333; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1161.0" spacing="65.0">
+                     <children>
+                        <Text fx:id="tiempo" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="username1" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pts1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="username2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pts2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </Pane>
+         </top>
       </BorderPane>
-      <BorderPane fx:id="VistaModosdeJuego" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+      <BorderPane fx:id="VistaPrincipal" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
          <left>
             <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
                <children>
@@ -1397,7 +1640,7 @@
                         <Image url="@../img/logo.png" />
                      </image>
                   </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1413,9 +1656,8 @@
                      </cursor>
                      <VBox.margin>
                         <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
+                     </VBox.margin></Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1433,7 +1675,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1451,7 +1693,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1469,7 +1711,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1487,7 +1729,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1505,7 +1747,7 @@
                         <Insets left="20.0" />
                      </VBox.margin>
                   </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" onMouseEntered="#Sonidobtn" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
@@ -1534,249 +1776,7 @@
                <BorderPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
-               <children>
-                  <Text layoutX="281.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección Modos de juego">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </Text>
-                  <CheckBox fx:id="CartaComodin" layoutX="234.0" layoutY="293.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="194.0" text="Carta Comodín">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="PuntoAdicional" layoutX="234.0" layoutY="494.0" mnemonicParsing="false" text="Punto adicional">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="CastigoPunto" layoutX="594.0" layoutY="293.0" mnemonicParsing="false" text="Castigo al fallar">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="TresCartas" layoutX="594.0" layoutY="478.0" mnemonicParsing="false" text="Tres cartas">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                  </CheckBox>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/CartaComodin.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="92.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/PuntoAdicional.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="447.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/Castigo.png" />
-                     </image></ImageView>
-                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="447.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/Trios.png" />
-                     </image>
-                  </ImageView>
-               </children>
             </Pane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaDificultad" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
-         <left>
-            <VBox alignment="TOP_CENTER" prefHeight="725.0" prefWidth="298.0" spacing="27.0" BorderPane.alignment="CENTER">
-               <children>
-                  <ImageView fitHeight="166.0" fitWidth="290.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/logo.png" />
-                     </image>
-                  </ImageView>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#IniciarJuego" prefHeight="47.0" prefWidth="250.0" text="   Iniciar Juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="35.0" fitWidth="29.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/iconIniciarJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaPonerNombre" prefHeight="47.0" prefWidth="250.0" text="   Poner Nombres" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/CambiarNombre.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaModoJuego" prefHeight="47.0" prefWidth="250.0" text="   Modo de juego" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="37.0" fitWidth="27.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/ModoJuego.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#VistaDificultad" prefHeight="47.0" prefWidth="250.0" text="   Dificultad" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="41.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Dificultad.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#TablaDePuntajes" prefHeight="47.0" prefWidth="250.0" text="   Tabla de puntajes" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="28.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Puntajes.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#Explicacion" prefHeight="47.0" prefWidth="250.0" text="   Explicación" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="36.0" fitWidth="30.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/explicacion.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#MostrarInformacion" prefHeight="47.0" prefWidth="250.0" text="   Informacion Proyecto" textAlignment="RIGHT" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="31.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../img/Proyecto.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                     <VBox.margin>
-                        <Insets left="20.0" />
-                     </VBox.margin>
-                  </Button>
-               </children>
-               <BorderPane.margin>
-                  <Insets top="15.0" />
-               </BorderPane.margin>
-            </VBox>
-         </left>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
-               <BorderPane.margin>
-                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-               </BorderPane.margin>
-               <children>
-                  <Text layoutX="303.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selección de Dificultad">
-                     <font>
-                        <Font name="System Bold" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="268.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione la cantidad de cartas " textAlignment="CENTER" wrappingWidth="326.583984375">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="219.0" layoutY="340.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo de partida (Minutos)" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="219.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seleccione el tiempo máximo por jugador (Segundos)" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="219.0" layoutY="601.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reacomodo automático de las cartas faltantes a medio juego" textAlignment="CENTER" wrappingWidth="424.583984375">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Text>
-                  <CheckBox fx:id="BotonDificultadFacil" layoutX="110.0" layoutY="121.0" mnemonicParsing="false" onAction="#Facil" prefHeight="33.0" prefWidth="210.0" text="Dificultad Facil">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="BotonDificultadMedia" layoutX="335.0" layoutY="121.0" mnemonicParsing="false" onAction="#Media" prefHeight="33.0" prefWidth="246.0" text="Dificultad Media">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <CheckBox fx:id="BotonDificultadDificil" layoutX="575.0" layoutY="121.0" mnemonicParsing="false" onAction="#Dificil" prefHeight="33.0" prefWidth="224.0" text="Dificultad Dificil">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </CheckBox>
-                  <ChoiceBox fx:id="CantidadCartas" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="242.0" prefWidth="150.0" />
-                  <ChoiceBox fx:id="TiempoMaxTotal" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="376.0" prefWidth="150.0" />
-                  <ChoiceBox fx:id="TiempoMaxJugador" accessibleRole="CHECK_BOX" accessibleText="fdsfs" layoutX="356.0" layoutY="517.0" prefWidth="150.0" />
-                  <CheckBox fx:id="botonCartasAutomaticas" layoutX="421.0" layoutY="638.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="0.0" />
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
+         </center></BorderPane>
    </children>
 </StackPane>
