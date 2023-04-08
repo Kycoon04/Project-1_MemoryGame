@@ -10,7 +10,7 @@
 
 <BorderPane fx:id="ModoRevision3" maxHeight="620.0" maxWidth="1120.0" minHeight="620.0" minWidth="1120.0" prefHeight="620.0" prefWidth="1120.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.ModoRevision3Controller">
    <center>
-      <Pane prefHeight="700.0" prefWidth="1091.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+      <Pane prefHeight="700.0" prefWidth="1091.0" style="-fx-background-color: white; -fx-background-radius: 10;" stylesheets="@BotonSelecionado.css" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </BorderPane.margin>

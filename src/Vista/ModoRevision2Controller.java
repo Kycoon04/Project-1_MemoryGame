@@ -7,12 +7,11 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
 public class ModoRevision2Controller implements Initializable {
 
-    @FXML
-    private BorderPane VistaJuego2;
     @FXML
     private ImageView Carta2Juego2;
     @FXML
@@ -37,6 +36,8 @@ public class ModoRevision2Controller implements Initializable {
     private ImageView Carta1Juego2;
     @FXML
     private ImageView Carta7Juego2;
+    @FXML
+    private BorderPane ModoRevision2;
 
     /**
      * Initializes the controller class.
@@ -58,5 +59,9 @@ public class ModoRevision2Controller implements Initializable {
        Carta10Juego2.setImage(Lista.get(9).getCartaAdelante());
        Carta11Juego2.setImage(Lista.get(10).getCartaAdelante());
        Carta12Juego2.setImage(Lista.get(11).getCartaAdelante());
+    }
+
+    @FXML
+    private void click(MouseEvent event) {
     }
 }

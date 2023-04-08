@@ -7,21 +7,12 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
-<BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.ModoRevision1Controller">
-   <top>
-      <Pane prefHeight="29.0" prefWidth="800.0" style="-fx-background-color: #11254A;" BorderPane.alignment="CENTER" />
-   </top>
+<BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="600.0" stylesheets="@BotonSelecionado.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.ModoRevision1Controller">
    <center>
       <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
          <children>
-            <Pane layoutY="-19.0" prefHeight="169.0" prefWidth="32.0" style="-fx-background-color: #11254A;" />
-            <Pane layoutY="149.0" prefHeight="173.0" prefWidth="32.0" style="-fx-background-color: #23417D;" />
-            <Pane layoutY="322.0" prefHeight="150.0" prefWidth="32.0" style="-fx-background-color: #0286AD;" />
-            <Pane layoutX="1106.0" layoutY="-8.0" prefHeight="306.0" prefWidth="74.0" style="-fx-background-color: #11254A;" />
-            <Pane layoutX="1106.0" layoutY="298.0" prefHeight="203.0" prefWidth="74.0" style="-fx-background-color: #23417D;" />
-            <Pane layoutX="1106.0" layoutY="501.0" prefHeight="178.0" prefWidth="74.0" style="-fx-background-color: #0286AD;" />
-            <Button layoutX="153.0" layoutY="32.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="53.0" layoutY="46.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -29,8 +20,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Button layoutX="332.0" layoutY="32.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="337.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="232.0" layoutY="46.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -38,8 +29,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Button layoutX="511.0" layoutY="33.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="516.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="411.0" layoutY="47.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -47,8 +38,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Button layoutX="153.0" layoutY="261.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="158.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="53.0" layoutY="275.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="58.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -56,8 +47,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Button layoutX="332.0" layoutY="260.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="337.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="232.0" layoutY="274.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="237.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -65,8 +56,8 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Button layoutX="511.0" layoutY="260.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-            <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="516.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+            <Button layoutX="411.0" layoutY="274.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+            <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="416.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../img/cartaAtras.png" />
                </image>
@@ -74,9 +65,6 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ImageView>
-            <Pane layoutX="770.0" layoutY="-19.0" prefHeight="169.0" prefWidth="32.0" style="-fx-background-color: #11254A;" />
-            <Pane layoutX="770.0" layoutY="149.0" prefHeight="173.0" prefWidth="32.0" style="-fx-background-color: #23417D;" />
-            <Pane layoutX="770.0" layoutY="322.0" prefHeight="150.0" prefWidth="32.0" style="-fx-background-color: #0286AD;" />
          </children>
       </Pane>
    </center>
