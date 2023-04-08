@@ -13,6 +13,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
@@ -289,126 +290,6 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </ImageView>
-               </children>
-            </Pane>
-         </center>
-      </BorderPane>
-      <BorderPane fx:id="VistaJuego1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1180.0">
-         <top>
-            <Pane prefHeight="79.0" prefWidth="900.0" style="-fx-background-color: #11254A;" BorderPane.alignment="CENTER">
-               <children>
-                  <Text fx:id="tiempo" fill="WHITE" layoutX="14.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="username1" fill="RED" layoutX="295.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="username2" fill="WHITE" layoutX="658.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fill="WHITE" layoutX="577.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Button layoutX="1079.0" layoutY="19.0" mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Text fx:id="pts1" fill="WHITE" layoutX="445.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-                  <Text fx:id="pts2" fill="WHITE" layoutX="814.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
-                     <font>
-                        <Font name="Consolas" size="24.0" />
-                     </font>
-                  </Text>
-               </children>
-            </Pane>
-         </top>
-         <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
-               <children>
-                  <Button contentDisplay="BOTTOM" layoutX="64.0" layoutY="597.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
-                     <font>
-                        <Font name="Consolas" size="18.0" />
-                     </font>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </Button>
-                  <Pane layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Button layoutX="353.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="532.0" layoutY="138.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="153.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="711.0" layoutY="139.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="154.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="353.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="358.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="532.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="537.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Button layoutX="711.0" layoutY="362.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
-                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="716.0" layoutY="377.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../img/cartaAtras.png" />
-                     </image>
-                     <cursor>
-                        <Cursor fx:constant="HAND" />
-                     </cursor>
-                  </ImageView>
-                  <Pane prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
-                  <Pane layoutX="1159.0" layoutY="298.0" prefHeight="203.0" prefWidth="41.0" style="-fx-background-color: #23417D;" />
-                  <Pane layoutX="1159.0" layoutY="501.0" prefHeight="178.0" prefWidth="41.0" style="-fx-background-color: #0286AD;" />
-                  <Pane layoutX="1159.0" prefHeight="299.0" prefWidth="41.0" style="-fx-background-color: #11254A;" />
                </children>
             </Pane>
          </center>
@@ -1803,6 +1684,133 @@
                </children>
             </Pane>
          </center>
+      </BorderPane>
+      <BorderPane fx:id="VistaJuego1" layoutX="10.0" layoutY="10.0" maxHeight="789.0" maxWidth="1252.0" minHeight="720.0" minWidth="1200.0" prefHeight="740.0" prefWidth="1252.0" style="-fx-background-color: #141316;">
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <Button contentDisplay="BOTTOM" layoutX="14.0" layoutY="528.0" mnemonicParsing="false" onAction="#modoRevision" prefHeight="59.0" prefWidth="206.0" style="-fx-background-color: transparent; -fx-border-color: #1E1E1E; -fx-border-width: 0px  0px  3px  3px;" text="Modo revisión">
+                     <font>
+                        <Font name="Consolas" size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button layoutX="380.0" layoutY="391.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta1" fitHeight="150.0" fitWidth="200.0" layoutX="385.0" layoutY="406.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="683.0" layoutY="391.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta2" fitHeight="150.0" fitWidth="200.0" layoutX="688.0" layoutY="406.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="759.0" layoutY="191.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta3" fitHeight="150.0" fitWidth="200.0" layoutX="764.0" layoutY="206.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="200.0" layoutY="190.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta4" fitHeight="150.0" fitWidth="200.0" layoutX="205.0" layoutY="205.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="380.0" layoutY="190.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta5" fitHeight="150.0" fitWidth="200.0" layoutX="385.0" layoutY="205.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <Button layoutX="569.0" layoutY="190.0" mnemonicParsing="false" prefHeight="179.0" prefWidth="136.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 4px;" textAlignment="CENTER" />
+                  <ImageView fx:id="Carta6" fitHeight="150.0" fitWidth="200.0" layoutX="574.0" layoutY="205.0" onMouseClicked="#click" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaAtras.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+         <top>
+            <Pane prefHeight="59.0" prefWidth="1160.0" style="-fx-background-color: #333333; -fx-background-radius: 10;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="59.0" prefWidth="1161.0" spacing="65.0">
+                     <children>
+                        <Text fx:id="tiempo" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Tiempo:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="username1" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 1:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pts1" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="VS" textAlignment="CENTER">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="username2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Jugador 2:">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="pts2" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="0 pts">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#SalirJuego" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 2px 2px  0px; -fx-border-color: white;" text="EXIT" textFill="WHITE">
+                           <font>
+                              <Font name="Consolas" size="24.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </BorderPane.margin>
+            </Pane>
+         </top>
       </BorderPane>
    </children>
 </StackPane>
