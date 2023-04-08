@@ -87,13 +87,9 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private CheckBox botonCartasAutomaticas;
     @FXML
-    private Button ElegirPvsP;
-    @FXML
     private CheckBox checkPvsPc;
     @FXML
     private CheckBox checkPvsP;
-    @FXML
-    private Button ElegirPvsPc;
     @FXML
     private Pane VistaFinalizar;
     @FXML
@@ -231,6 +227,7 @@ public class VistaJuegoController implements Initializable {
     }
     @FXML
     private void IniciarJuego(ActionEvent event) {
+        AnalizarConfiguracion();
         switch(CantidadCartas.getValue()){
             case "6": cargarParametros(Facil);IniciarFacil();break;
             case "12": cargarParametros(Medio);IniciarMedio();break;
@@ -276,80 +273,8 @@ public class VistaJuegoController implements Initializable {
             default:break;
         }
     }
-    private void salirExplicacion(MouseEvent event) {
-        VistaPrincipal.toFront();
-    }
-    private void SalirDificultad(ActionEvent event) {
-        VistaPrincipal.toFront();
-    }
-    private void salirTabla(MouseEvent event) {
-        VistaPrincipal.toFront();
-    }
     /*FIN BOTONES SALIR----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    
-    /*BOTONES ACEPTAR------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @FXML
-    private void ElegirPersonavsPersona(ActionEvent event) {
-        username1.setText(campo1.getText());
-        username2.setText(campo2.getText());
-    }
-        @FXML
-    private void ElegirPersonavsPc(ActionEvent event) {
-        username1.setText(campo3.getText());
-        username2.setText(campo4.getText());
-    }
-    @FXML
-    private void AceptarModosJuegos(ActionEvent event) { /*hols*/
-         VistaPrincipal.toFront();
-         if(TresCartas.isSelected()){
-         Facil.setTresCartas(true); Facil.setNumeroParejas(2);
-         Medio.setTresCartas(true); Medio.setNumeroParejas(4);
-         Dificil.setTresCartas(true); Dificil.setNumeroParejas(6);
-         }else{
-         Facil.setTresCartas(false); Facil.setNumeroParejas(3);
-         Medio.setTresCartas(false); Medio.setNumeroParejas(6);
-         Dificil.setTresCartas(false); Dificil.setNumeroParejas(9);
-         }
-         Facil.setPuntoAdicional(PuntoAdicional.isSelected());
-         Medio.setPuntoAdicional(PuntoAdicional.isSelected());
-         Dificil.setPuntoAdicional(PuntoAdicional.isSelected());
-         Facil.setCastigoPunto(CastigoPunto.isSelected());
-         Medio.setCastigoPunto(CastigoPunto.isSelected());
-         Dificil.setCastigoPunto(CastigoPunto.isSelected());
-         Facil.setCartaComodin(CartaComodin.isSelected());
-         Medio.setCartaComodin(CartaComodin.isSelected());
-         Dificil.setCartaComodin(CartaComodin.isSelected());
-
-    }
-    @FXML
-    private void AceptarDificultad(ActionEvent event) {
-        VistaPrincipal.toFront();
-            switch(CantidadCartas.getValue()){
-            case "6": Facil.getPuntajes().clear();break;
-            case "12": Medio.getPuntajes().clear();break;
-            case "18": Dificil.getPuntajes().clear();break;
-            default:break;
-        }
-        if(BotonDificultadFacil.isSelected()){
-        Facil.setDificultad(5);
-        Medio.setDificultad(5);
-        Dificil.setDificultad(5);
-        }
-        if(BotonDificultadMedia.isSelected()){
-        Facil.setDificultad(12);
-        Medio.setDificultad(12);
-        Dificil.setDificultad(12);
-        }
-        if(BotonDificultadDificil.isSelected()){
-        Facil.setDificultad(50);
-        Medio.setDificultad(50);
-        Dificil.setDificultad(50);
-        }
-        Facil.setReacomodo(botonCartasAutomaticas.isSelected());
-        Medio.setReacomodo(botonCartasAutomaticas.isSelected());
-        Dificil.setReacomodo(botonCartasAutomaticas.isSelected());
-    }
-        @FXML
     private void Facil(ActionEvent event) {
         if(BotonDificultadFacil.isSelected()){
         BotonDificultadMedia.setDisable(true);
@@ -388,42 +313,6 @@ public class VistaJuegoController implements Initializable {
     ReguladorClicks(event,2);
     }
 }
-    @FXML
-    private void CheckPersonavsPersona(ActionEvent event) {
-        Facil.setPersonavscomputadora(false);
-        Medio.setPersonavscomputadora(false);
-        Dificil.setPersonavscomputadora(false);
-        if(checkPvsP.isSelected()){
-        checkPvsPc.setDisable(true);
-        ElegirPvsPc.setDisable(true);
-        campo3.setDisable(true);
-        campo4.setDisable(true);
-        }
-        else{
-        checkPvsPc.setDisable(false);
-        ElegirPvsPc.setDisable(false);
-        campo3.setDisable(false);
-        campo4.setDisable(false);
-        }
-    }
-    @FXML
-    private void CheckPersonavsPc(ActionEvent event) {
-        Facil.setPersonavscomputadora(true);
-        Medio.setPersonavscomputadora(true);
-        Dificil.setPersonavscomputadora(true);
-        if(checkPvsPc.isSelected()){
-        checkPvsP.setDisable(true);
-        ElegirPvsP.setDisable(true);
-        campo1.setDisable(true);
-        campo2.setDisable(true);
-        }
-        else{
-        checkPvsP.setDisable(false);
-        ElegirPvsP.setDisable(false);
-        campo1.setDisable(false);
-        campo2.setDisable(false);
-        }
-    }
     public void IniciarFacil(){
         ClaseCarta[] cartas = new ClaseCarta[] {
         new ClaseCarta(Carta1,1),
@@ -546,5 +435,89 @@ public class VistaJuegoController implements Initializable {
                 break;
         }
     }
+    }
+    public void AnalizarConfiguracion(){
+        Facil.setPersonavscomputadora(checkPvsPc.isSelected());
+        Medio.setPersonavscomputadora(checkPvsPc.isSelected());
+        Dificil.setPersonavscomputadora(checkPvsPc.isSelected());
+        if(checkPvsP.isSelected()){
+        username1.setText(campo1.getText());
+        username2.setText(campo2.getText());
+        }
+        else{
+        username1.setText(campo3.getText());
+        username2.setText(campo4.getText());
+        }
+         if(TresCartas.isSelected()){
+         Facil.setTresCartas(true); Facil.setNumeroParejas(2);
+         Medio.setTresCartas(true); Medio.setNumeroParejas(4);
+         Dificil.setTresCartas(true); Dificil.setNumeroParejas(6);
+         }else{
+         Facil.setTresCartas(false); Facil.setNumeroParejas(3);
+         Medio.setTresCartas(false); Medio.setNumeroParejas(6);
+         Dificil.setTresCartas(false); Dificil.setNumeroParejas(9);
+         }
+         Facil.setPuntoAdicional(PuntoAdicional.isSelected());
+         Medio.setPuntoAdicional(PuntoAdicional.isSelected());
+         Dificil.setPuntoAdicional(PuntoAdicional.isSelected());
+         Facil.setCastigoPunto(CastigoPunto.isSelected());
+         Medio.setCastigoPunto(CastigoPunto.isSelected());
+         Dificil.setCastigoPunto(CastigoPunto.isSelected());
+         Facil.setCartaComodin(CartaComodin.isSelected());
+         Medio.setCartaComodin(CartaComodin.isSelected());
+         Dificil.setCartaComodin(CartaComodin.isSelected());
+         
+        switch(CantidadCartas.getValue()){
+            case "6": Facil.getPuntajes().clear();break;
+            case "12": Medio.getPuntajes().clear();break;
+            case "18": Dificil.getPuntajes().clear();break;
+            default:break;
+        }
+        if(BotonDificultadFacil.isSelected()){
+        Facil.setDificultad(5);
+        Medio.setDificultad(5);
+        Dificil.setDificultad(5);
+        }
+        if(BotonDificultadMedia.isSelected()){
+        Facil.setDificultad(12);
+        Medio.setDificultad(12);
+        Dificil.setDificultad(12);
+        }
+        if(BotonDificultadDificil.isSelected()){
+        Facil.setDificultad(50);
+        Medio.setDificultad(50);
+        Dificil.setDificultad(50);
+        }
+        Facil.setReacomodo(botonCartasAutomaticas.isSelected());
+        Medio.setReacomodo(botonCartasAutomaticas.isSelected());
+        Dificil.setReacomodo(botonCartasAutomaticas.isSelected());
+        
+    }
+
+    @FXML
+    private void CheckPersonavsPersona(ActionEvent event) {
+        if(checkPvsP.isSelected()){
+        checkPvsPc.setDisable(true);
+        campo3.setDisable(true);
+        campo4.setDisable(true);
+        }
+        else{
+        checkPvsPc.setDisable(false);
+        campo3.setDisable(false);
+        campo4.setDisable(false);
+        }
+    }
+    @FXML
+    private void CheckPersonavsPc(ActionEvent event) {
+        if(checkPvsPc.isSelected()){
+        checkPvsP.setDisable(true);
+        campo1.setDisable(true);
+        campo2.setDisable(true);
+        }
+        else{
+        checkPvsP.setDisable(false);
+        campo1.setDisable(false);
+        campo2.setDisable(false);
+        }
     }
 }
