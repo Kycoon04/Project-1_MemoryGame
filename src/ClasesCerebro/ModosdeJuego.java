@@ -963,17 +963,34 @@ public abstract class ModosdeJuego {
     }
     }
     public void CargarComodin(){
-    Image CartaComodin = new Image("/img/CartaComodin.png");      
+    Image CartComodin = new Image("/img/CartaComodin.png");
+    if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
-        Lista.get(i).setCartaAdelante(CartaComodin);
+        Lista.get(i).setCartaAdelante(CartComodin);
+        Lista.get(i).setCartaComodin(true);
+        }
+        if(Lista.get(i).getValor()==(1+NumeroParejas)){
+        Lista.get(i).setCartaAdelante(CartComodin);
+        Lista.get(i).setCartaComodin(true);
+        }
+        if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
+        Lista.get(i).setCartaAdelante(CartComodin);
+        Lista.get(i).setCartaComodin(true);
+        }
+        }
+    }else{
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+        Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
         }
         if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
-        Lista.get(i).setCartaAdelante(CartaComodin);
+        Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
         }
-        } 
+        }
+    }
     }
     public void CartaComodinPrimero(int i){
             if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
