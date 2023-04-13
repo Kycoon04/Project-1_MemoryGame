@@ -1123,7 +1123,7 @@ public abstract class ModosdeJuego {
             }
            }   
         }else{
-            if(b.getValor()>=(2*NumeroParejas)){
+            if(b.getValor()>(2*NumeroParejas)){
                 System.out.println("hola2");
             for(int i=0; i<Lista.size();i++){
             if(Lista.get(i).getValor()==(b.getValor()-(2*NumeroParejas))){
