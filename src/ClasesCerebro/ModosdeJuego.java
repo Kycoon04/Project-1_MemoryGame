@@ -609,6 +609,7 @@ public abstract class ModosdeJuego {
     c.setValor(0);
     setTurno(turno+1);
     }
+    ContCartaComodin=1;
     }
     
     public void ParejaPvPcTresCartas(int probabilidad, TableView<Puntaje> Tabla, Pane VistaFinalizar) {
@@ -952,11 +953,17 @@ public abstract class ModosdeJuego {
                 getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
                 NuevoA(getLista().get(posicion-1).getValor(),getLista().get(i).getCartaAtras());
               }
-              if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1){
+              if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1 && !TresCartas){
               CartaComodinPrimero(i);
               } 
-              else if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==2){
+              else if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==2 && !TresCartas){
               CartaComodinSegundo(posicion);
+              }
+              if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1 && TresCartas){
+              CartaComodinPrimeroTresCartas(i);
+              } 
+              else if(Lista.get(i).isCartaComodin() && CartaComodin && (ContCartaComodin==3 ||ContCartaComodin==2)  && TresCartas){
+              CartaComodinSegundoTresCartas(posicion);
               }
               ContCartaComodin++;
             }
@@ -1045,5 +1052,59 @@ public abstract class ModosdeJuego {
               }
             };
            setTimeout(mx,1000);   
+    }
+    public void CartaComodinPrimeroTresCartas(int i){
+             if(Lista.get(i).getValor()==(1+NumeroParejas)){
+                for(int k=0;k<NumeroCartas;k++){
+                    if(Lista.get(k).getValor()==1){
+                       new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                       getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                       b.setPosicion(Lista.get(k).getCartaAtras());
+                       b.setValor(getLista().get(k).getValor());
+                    }
+                    if(Lista.get(k).getValor()==(1+2*NumeroParejas)){
+                       new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                       getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                       c.setPosicion(Lista.get(k).getCartaAtras());
+                       c.setValor(getLista().get(k).getValor());
+                    }
+                } 
+            }
+             else {
+               if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
+                for(int k=0;k<NumeroCartas;k++){  
+                  if(Lista.get(k).getValor()==(1+NumeroParejas)){
+                    new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                    getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                    b.setPosicion(Lista.get(k).getCartaAtras());
+                    b.setValor(getLista().get(k).getValor());
+                  }
+                  if(Lista.get(k).getValor()==1){
+                    new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                    getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                    c.setPosicion(Lista.get(k).getCartaAtras());
+                    c.setValor(getLista().get(k).getValor());
+                  }
+                }
+               }else{
+                for(int k=0;k<NumeroCartas;k++){  
+                  if(Lista.get(k).getValor()==(1+NumeroParejas)){
+                    new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                    getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                    b.setPosicion(Lista.get(k).getCartaAtras());
+                    b.setValor(getLista().get(k).getValor());
+                  }
+                  if(Lista.get(k).getValor()==(1+2*NumeroParejas)){
+                       new animatefx.animation.BounceIn(getLista().get(k).getCartaAtras()).play();
+                       getLista().get(k).getCartaAtras().setImage(getLista().get(k).getCartaAdelante());
+                       c.setPosicion(Lista.get(k).getCartaAtras());
+                       c.setValor(getLista().get(k).getValor());
+                  }
+                }
+               }
+            }
+    }
+    public void CartaComodinSegundoTresCartas(int posicion){
+        System.out.println("hola"); 
     }
 }
