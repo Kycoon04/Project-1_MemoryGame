@@ -964,6 +964,7 @@ public abstract class ModosdeJuego {
               } 
               else if(Lista.get(i).isCartaComodin() && CartaComodin && (ContCartaComodin==3 ||ContCartaComodin==2)  && TresCartas){
               CartaComodinSegundoTresCartas(posicion);
+                  System.out.println("hola");
               }
               ContCartaComodin++;
             }
@@ -1105,6 +1106,69 @@ public abstract class ModosdeJuego {
             }
     }
     public void CartaComodinSegundoTresCartas(int posicion){
-        System.out.println("hola"); 
+        if(b.getValor()<=NumeroParejas){
+            System.out.println("hola1");
+          for(int i=0; i<Lista.size();i++){
+            if(Lista.get(i).getValor()==(b.getValor()+(1+2*NumeroParejas))-1){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                a.setPosicion(Lista.get(i).getCartaAtras());
+                a.setValor(getLista().get(i).getValor());
+            }
+            if(Lista.get(i).getValor()==(b.getValor()+(1+NumeroParejas))-1){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                c.setPosicion(Lista.get(i).getCartaAtras());
+                c.setValor(getLista().get(i).getValor());
+            }
+           }   
+        }else{
+            if(b.getValor()>=(2*NumeroParejas)){
+                System.out.println("hola2");
+            for(int i=0; i<Lista.size();i++){
+            if(Lista.get(i).getValor()==(b.getValor()-(2*NumeroParejas))){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                a.setPosicion(Lista.get(i).getCartaAtras());
+                a.setValor(getLista().get(i).getValor());
+            }
+            if(Lista.get(i).getValor()==(b.getValor()-NumeroParejas)){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                c.setPosicion(Lista.get(i).getCartaAtras());
+                c.setValor(getLista().get(i).getValor());
+            }
+            }  
+            }
+            else{
+            System.out.println("hola3");
+            for(int i=0; i<Lista.size();i++){
+            if(Lista.get(i).getValor()==(b.getValor()+NumeroParejas)){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                a.setPosicion(Lista.get(i).getCartaAtras());
+                a.setValor(Lista.get(i).getValor());
+            }
+            if(Lista.get(i).getValor()==(b.getValor()-NumeroParejas)){
+                new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
+                getLista().get(i).getCartaAtras().setImage(getLista().get(i).getCartaAdelante());
+                c.setPosicion(Lista.get(i).getCartaAtras());
+                c.setValor(getLista().get(i).getValor());
+            }
+            }
+            }
+        }
+        
+        Runnable mx=new Runnable(){
+            @Override
+              public void run() {
+               for(int i=0; i<Lista.size();i++){
+                 if(Lista.get(i).getNumCarta()==posicion){
+                    Lista.get(i).getCartaAtras().setImage(Respaldo);
+                 }
+               }
+              }
+            };
+           setTimeout(mx,1000); 
     }
 }
