@@ -20,7 +20,7 @@ import javafx.util.Duration;
 
 public abstract class ModosdeJuego {
     
-    protected NumeroYPosicion a,b,c;
+    protected NumeroYPosicion a,b,c,aux;
     protected ArrayList<ClaseCarta> Lista = new ArrayList<>();
     protected ArrayList<ClaseCarta> ListaReacomodo = new ArrayList<>();
     protected ArrayList<Integer> NumerosEncontrados = new ArrayList<>();
@@ -951,6 +951,7 @@ public abstract class ModosdeJuego {
               if(!(getLista().get(i).getCartaAtras().getImage()==getLista().get(posicion-1).getCartaAdelante())){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
                 getLista().get(i).getCartaAtras().setImage(getLista().get(posicion-1).getCartaAdelante());
+                aux=a;
                 NuevoA(getLista().get(posicion-1).getValor(),getLista().get(i).getCartaAtras());
               }
               if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1 && !TresCartas){
@@ -959,13 +960,19 @@ public abstract class ModosdeJuego {
               else if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==2 && !TresCartas){
               CartaComodinSegundo(posicion);
               }
+              
               if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==1 && TresCartas){
               CartaComodinPrimeroTresCartas(i);
               } 
-              else if(Lista.get(i).isCartaComodin() && CartaComodin && (ContCartaComodin==3 ||ContCartaComodin==2)  && TresCartas){
+              else {
+              if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==2  && TresCartas){
               CartaComodinSegundoTresCartas(posicion);
-                  System.out.println("hola");
               }
+              else if(Lista.get(i).isCartaComodin() && CartaComodin && ContCartaComodin==3  && TresCartas){
+              aux.getPosicion().setImage(Respaldo);
+              CartaComodinSegundoTresCartas(posicion);
+              }
+            }
               ContCartaComodin++;
             }
     }
@@ -1107,7 +1114,6 @@ public abstract class ModosdeJuego {
     }
     public void CartaComodinSegundoTresCartas(int posicion){
         if(b.getValor()<=NumeroParejas){
-            System.out.println("hola1");
           for(int i=0; i<Lista.size();i++){
             if(Lista.get(i).getValor()==(b.getValor()+(1+2*NumeroParejas))-1){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
@@ -1124,7 +1130,6 @@ public abstract class ModosdeJuego {
            }   
         }else{
             if(b.getValor()>(2*NumeroParejas)){
-                System.out.println("hola2");
             for(int i=0; i<Lista.size();i++){
             if(Lista.get(i).getValor()==(b.getValor()-(2*NumeroParejas))){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
@@ -1141,7 +1146,6 @@ public abstract class ModosdeJuego {
             }  
             }
             else{
-            System.out.println("hola3");
             for(int i=0; i<Lista.size();i++){
             if(Lista.get(i).getValor()==(b.getValor()+NumeroParejas)){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();
@@ -1171,4 +1175,5 @@ public abstract class ModosdeJuego {
             };
            setTimeout(mx,1000); 
     }
+    
 }
