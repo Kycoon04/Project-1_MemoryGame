@@ -130,9 +130,6 @@ public abstract class ModosdeJuego {
         this.ContJugador2 = ContJugador2;
     }
 
-    public Timeline getTimeline() {
-        return timeline;
-    }
 
     public void setTimeline(Timeline timeline) {
         this.timeline = timeline;
@@ -197,8 +194,8 @@ public abstract class ModosdeJuego {
         MarcarTurno();
         }
         else{
-        getTimeline().setCycleCount(Animation.INDEFINITE);
-        getTimeline().play();
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
         MarcarTurno();
         ImageView d = (ImageView) event.getSource();
         CartaSelecionada(d.getId());
@@ -451,7 +448,7 @@ public abstract class ModosdeJuego {
                 VistaFinalizar.toFront();
                 new animatefx.animation.BounceIn(VistaFinalizar).play();
                 Finalizar(Tabla);
-                getTimeline().stop();
+                timeline.stop();
             }
             if(segundosJugador==TiempoMaxJugador){
                 setTurno(turno+1);
@@ -462,8 +459,8 @@ public abstract class ModosdeJuego {
             setSegundos(segundos+1);
             getParametrosText().get(10).setText("Tiempo: "+minutos+":"+segundos);
         })));
-        getTimeline().setCycleCount(Animation.INDEFINITE);
-        getTimeline().play();
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
     }
     
     public void JuegoTresCartas(MouseEvent event,TableView<Puntaje> Tabla,Pane VistaFinalizar){
@@ -509,8 +506,8 @@ public abstract class ModosdeJuego {
         MarcarTurno();
         }
         else{
-        getTimeline().setCycleCount(Animation.INDEFINITE);
-        getTimeline().play();
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
         MarcarTurno();
         ImageView d = (ImageView) event.getSource();
         CartaSelecionada(d.getId());
