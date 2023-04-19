@@ -154,6 +154,7 @@ public abstract class ModosdeJuego {
     }
     
     public void Juego(MouseEvent event,TableView<Puntaje> Tabla,Pane VistaFinalizar){
+    
          if(TresCartas){
          JuegoTresCartas(event,Tabla,VistaFinalizar);
          }else{
@@ -271,6 +272,31 @@ public abstract class ModosdeJuego {
            NumerosEncontrados.add(b.getValor());
            setFinalizarJuego(FinalizarJuego+1);
            setTurno(turno-1);
+           if(CartaComodin){
+         System.out.println("hola");
+        if(TresCartas){
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==(1+NumeroParejas)){
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
+        NumerosEncontrados.add(i);
+        }
+        }
+    }else{
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
+        NumerosEncontrados.add(i);
+        }
+        }
+    }
+     }
            if(Reacomodo){
            for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
@@ -533,6 +559,7 @@ public abstract class ModosdeJuego {
         }
     }
     public void ParejaPvPTresCartas(){
+    int j=0;
     int mayor, segundoMayor, menor;
     segundosJugador=0;
     if(a.getValor()!=0 && b.getValor()!=0 && c.getValor()!=0){
@@ -599,6 +626,48 @@ public abstract class ModosdeJuego {
             setTimeout(mx,1000);
             if(CastigoPunto){
             PuntoCastigo();
+            }
+    }
+    
+         
+        if(TresCartas){
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+            System.out.println("hola");
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==(1+NumeroParejas)){
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
+        NumerosEncontrados.add(i);
+        }
+        }
+    }else{
+        for(int i=0;i<NumeroCartas;i++){
+        if(Lista.get(i).getValor()==1){
+        NumerosEncontrados.add(i);
+        }
+        if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
+        NumerosEncontrados.add(i);
+        }
+        }
+    }
+     
+    if(Reacomodo){
+           for (int i = 0; i < Lista.size(); i++) {
+               if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
+                ListaReacomodo.add(Lista.get(i));
+             }
+           }
+           desordenarLista(ListaReacomodo);
+           j=0;  
+           for (int i = 0; i < Lista.size(); i++) {
+               if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
+               ClaseCarta aux = ListaReacomodo.get(j);
+               Lista.set(i, aux);
+               j++;
+               }
             }
     }
     a.setValor(0);
@@ -981,14 +1050,17 @@ public abstract class ModosdeJuego {
         if(Lista.get(i).getValor()==1){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
+        NumerosEncontrados.add(i);
         }
         if(Lista.get(i).getValor()==(1+NumeroParejas)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
+        NumerosEncontrados.add(i);
         }
         if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
+        NumerosEncontrados.add(i);
         }
         }
     }else{
@@ -996,10 +1068,12 @@ public abstract class ModosdeJuego {
         if(Lista.get(i).getValor()==1){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
+        NumerosEncontrados.add(i);
         }
         if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
+        NumerosEncontrados.add(i);
         }
         }
     }
