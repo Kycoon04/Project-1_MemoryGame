@@ -1046,19 +1046,20 @@ public abstract class ModosdeJuego {
     if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
+            System.out.println(Lista.get(i).getValor());
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
-        NumerosEncontrados.add(i);
+        NumerosEncontrados.add(Lista.get(i).getValor());
         }
         if(Lista.get(i).getValor()==(1+NumeroParejas)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
-        NumerosEncontrados.add(i);
+        NumerosEncontrados.add(Lista.get(i).getValor());
         }
         if(Lista.get(i).getValor()==(1+2*NumeroParejas)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
-        NumerosEncontrados.add(i);
+        NumerosEncontrados.add(Lista.get(i).getValor());
         }
         }
     }else{
@@ -1066,12 +1067,12 @@ public abstract class ModosdeJuego {
         if(Lista.get(i).getValor()==1){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
-        NumerosEncontrados.add(i);
+        NumerosEncontrados.add(Lista.get(i).getValor());
         }
         if(Lista.get(i).getValor()==((NumeroCartas/2)+1)){
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
-        NumerosEncontrados.add(i);
+        NumerosEncontrados.add(Lista.get(i).getValor());
         }
         }
     }

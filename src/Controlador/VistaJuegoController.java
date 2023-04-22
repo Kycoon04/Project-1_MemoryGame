@@ -392,6 +392,7 @@ public class VistaJuegoController implements Initializable {
     Dificil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
     public void cargarParametros(ModosdeJuego obj){
+        
      obj.getParametrosText().add(username1);
      obj.getParametrosText().add(username2);
      obj.getParametrosText().add(pts1);
@@ -439,12 +440,22 @@ public class VistaJuegoController implements Initializable {
         Medio.setPersonavscomputadora(checkPvsPc.isSelected());
         Dificil.setPersonavscomputadora(checkPvsPc.isSelected());
         if(checkPvsP.isSelected()){
-        username1.setText(campo1.getText());
-        username2.setText(campo2.getText());
+            if(campo1.getText().isEmpty()){
+               username1.setText("Jugador 1");
+               username2.setText("Jugador 2");
+            }else{
+            username1.setText(campo1.getText());
+            username2.setText(campo2.getText());
+            }
         }
         else{
-        username1.setText(campo3.getText());
-        username2.setText(campo4.getText());
+            if(campo3.getText().isEmpty()){
+               username1.setText("Jugador 1");
+               username2.setText("Jugador 2");
+            }else{
+            username1.setText(campo1.getText());
+            username2.setText(campo2.getText());
+            }
         }
          if(TresCartas.isSelected()){
          Facil.setTresCartas(true); Facil.setNumeroParejas(2);
