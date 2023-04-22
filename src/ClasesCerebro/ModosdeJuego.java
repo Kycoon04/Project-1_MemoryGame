@@ -273,7 +273,6 @@ public abstract class ModosdeJuego {
            setFinalizarJuego(FinalizarJuego+1);
            setTurno(turno-1);
            if(CartaComodin){
-         System.out.println("hola");
         if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
@@ -633,7 +632,6 @@ public abstract class ModosdeJuego {
         if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
-            System.out.println("hola");
         NumerosEncontrados.add(i);
         }
         if(Lista.get(i).getValor()==(1+NumeroParejas)){
