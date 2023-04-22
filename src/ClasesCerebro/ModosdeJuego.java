@@ -154,15 +154,15 @@ public abstract class ModosdeJuego {
     }
     
     public void Juego(MouseEvent event,TableView<Puntaje> Tabla,Pane VistaFinalizar){
-    
+          ImageView aux;
          if(TresCartas){
          JuegoTresCartas(event,Tabla,VistaFinalizar);
          }else{
         if(Personavscomputadora){
         MarcarTurno();
         if(!(turno%2==0)){
-        ImageView d = (ImageView) event.getSource();
-        CartaSelecionada(d.getId());
+        aux = (ImageView) event.getSource();
+        CartaSelecionada(aux.getId());
         if(b.getValor()==0){
             b.setValor(a.getValor());
             b.setPosicion(a.getPosicion());
@@ -198,8 +198,8 @@ public abstract class ModosdeJuego {
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
         MarcarTurno();
-        ImageView d = (ImageView) event.getSource();
-        CartaSelecionada(d.getId());
+        aux = (ImageView) event.getSource();
+        CartaSelecionada(aux.getId());
         if(b.getValor()==0){
             b.setValor(a.getValor());
             b.setPosicion(a.getPosicion());

@@ -2,7 +2,7 @@ package ClasesCerebro;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-public class ClaseCarta { /*hola mundo*/
+public class ClaseCarta {
     private Image CartaAdelante;
     private int Valor;
     private ImageView CartaAtras;
@@ -33,15 +33,19 @@ public class ClaseCarta { /*hola mundo*/
     public Image getCartaAdelante() {
         return CartaAdelante;
     }
+    
     public ImageView getCartaAtras() {
         return CartaAtras;
     }
+    
     public void setValor(int Valor) {
         this.Valor = Valor;
     }
+    
     public int getValor() {
         return Valor;
     }
+    
     public void setCartaAdelante(Image CartaAdelante) {
         this.CartaAdelante = CartaAdelante;
     }
