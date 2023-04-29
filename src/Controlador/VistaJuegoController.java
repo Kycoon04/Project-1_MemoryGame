@@ -453,8 +453,8 @@ public class VistaJuegoController implements Initializable {
                username1.setText("Jugador 1");
                username2.setText("Jugador 2");
             }else{
-            username1.setText(campo1.getText());
-            username2.setText(campo2.getText());
+            username1.setText(campo3.getText());
+            username2.setText(campo4.getText());
             }
         }
          if(TresCartas.isSelected()){
@@ -531,6 +531,5 @@ public class VistaJuegoController implements Initializable {
     }
     @FXML
     private void Sonidobtn(MouseEvent event) {
-        
     }
 }
