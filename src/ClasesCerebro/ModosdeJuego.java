@@ -1232,7 +1232,6 @@ public abstract class ModosdeJuego {
             }
             }
         }
-        
         Runnable mx=new Runnable(){
             @Override
               public void run() {
@@ -1245,5 +1244,4 @@ public abstract class ModosdeJuego {
             };
            setTimeout(mx,1000); 
     }
-    
 }

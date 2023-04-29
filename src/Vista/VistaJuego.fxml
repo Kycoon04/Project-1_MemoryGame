@@ -1776,6 +1776,13 @@
                <BorderPane.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </BorderPane.margin>
+               <children>
+                  <ImageView fitHeight="344.0" fitWidth="388.0" layoutX="259.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/cartaLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
             </Pane>
          </center></BorderPane>
    </children>
