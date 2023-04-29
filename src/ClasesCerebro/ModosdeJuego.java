@@ -154,7 +154,7 @@ public abstract class ModosdeJuego {
     }
     
     public void Juego(MouseEvent event,TableView<Puntaje> Tabla,Pane VistaFinalizar){
-          ImageView aux;
+         ImageView aux;
          if(TresCartas){
          JuegoTresCartas(event,Tabla,VistaFinalizar);
          }else{
@@ -886,7 +886,7 @@ public abstract class ModosdeJuego {
     segundosJugador=0;
     PuntoAdi=0;
     }
-    public void ActualizarTabla(Puntaje user1,Puntaje user2){
+public void ActualizarTabla(Puntaje user1,Puntaje user2){
         int contador=0;
         boolean bandera=false;
         if(!(Personavscomputadora)){

@@ -13,6 +13,7 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
@@ -476,12 +477,6 @@ public class VistaJuegoController implements Initializable {
          Medio.setCartaComodin(CartaComodin.isSelected());
          Dificil.setCartaComodin(CartaComodin.isSelected());
          
-        switch(CantidadCartas.getValue()){
-            case "6": Facil.getPuntajes().clear();break;
-            case "12": Medio.getPuntajes().clear();break;
-            case "18": Dificil.getPuntajes().clear();break;
-            default:break;
-        }
         if(BotonDificultadFacil.isSelected()){
         Facil.setDificultad(5);
         Medio.setDificultad(5);
