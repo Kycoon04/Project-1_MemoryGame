@@ -792,8 +792,8 @@ public abstract class ModosdeJuego {
              Platform.runLater(() -> {
                  if(FinalizarJuego==6){
                     VistaFinalizar.toFront();
-                     new animatefx.animation.BounceIn(VistaFinalizar).play();
-                     Finalizar(Tabla);
+                    new animatefx.animation.BounceIn(VistaFinalizar).play();
+                    Finalizar(Tabla);
                  }
              });
             }
