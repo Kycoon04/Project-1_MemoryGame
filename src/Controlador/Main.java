@@ -6,9 +6,11 @@ import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    private final Image icon = new Image(getClass().getResourceAsStream("/img/logo.png"));
     @Override
     public void start(Stage primaryStage) throws IOException {
       try {
@@ -17,6 +19,7 @@ public class Main extends Application {
                 Scene scene = new Scene(root);
                 primaryStage.setScene(scene);
                 primaryStage.setResizable(false);
+                primaryStage.getIcons().add(icon);
                 primaryStage.show();
         } catch (IOException e) {
             System.out.println(e.getMessage());
