@@ -13,7 +13,6 @@ import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.TableColumn;
@@ -48,13 +47,13 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private BorderPane VistaDificultad;
     @FXML
-    private TextField campo1; /*CAMPO PARA INSERTAR NOMBRE*/    
+    private TextField campo1;   
     @FXML
-    private TextField campo2; /*CAMPO PARA INSERTAR NOMBRE*/  
+    private TextField campo2; 
     @FXML
-    private TextField campo3; /*CAMPO PARA INSERTAR NOMBRE*/  
+    private TextField campo3; 
     @FXML
-    private TextField campo4; /*CAMPO PARA INSERTAR NOMBRE*/  
+    private TextField campo4; 
     @FXML
     private Text tiempo;
     @FXML
