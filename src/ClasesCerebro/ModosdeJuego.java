@@ -1100,7 +1100,7 @@ public void ActualizarTabla(Puntaje user1,Puntaje user2){
             }
     }
     public void CartaComodinSegundo(int posicion){
-        if(b.getValor()>=NumeroCartas/2){
+        if(b.getValor()>NumeroCartas/2){
           for(int i=0; i<Lista.size();i++){
             if(Lista.get(i).getValor()==(b.getValor()-NumeroParejas)){
                 new animatefx.animation.BounceIn(getLista().get(i).getCartaAtras()).play();

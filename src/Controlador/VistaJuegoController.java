@@ -473,6 +473,7 @@ public class VistaJuegoController implements Initializable {
          Facil.setCastigoPunto(CastigoPunto.isSelected());
          Medio.setCastigoPunto(CastigoPunto.isSelected());
          Dificil.setCastigoPunto(CastigoPunto.isSelected());
+         
          Facil.setCartaComodin(CartaComodin.isSelected());
          Medio.setCartaComodin(CartaComodin.isSelected());
          Dificil.setCartaComodin(CartaComodin.isSelected());
