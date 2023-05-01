@@ -147,7 +147,7 @@ public abstract class ModosdeJuego {
              Platform.runLater(() -> {
                  if(FinalizarJuego==NumeroParejas){
                      VistaFinalizar.toFront();
-                     new animatefx.animation.BounceIn(VistaFinalizar).play();
+                     new animatefx.animation.Swing(VistaFinalizar).play();
                      Finalizar(Tabla);
                  }else {
                     if (turno % 2 == 0) {
@@ -179,7 +179,7 @@ public abstract class ModosdeJuego {
         }
         if(FinalizarJuego==NumeroParejas){
          VistaFinalizar.toFront();
-         new animatefx.animation.BounceIn(VistaFinalizar).play();
+         new animatefx.animation.Swing(VistaFinalizar).play();
          Finalizar(Tabla);
         }
         }
@@ -438,7 +438,7 @@ public abstract class ModosdeJuego {
             }
             if(minutos==TiempoMax){
                 VistaFinalizar.toFront();
-                new animatefx.animation.BounceIn(VistaFinalizar).play();
+                new animatefx.animation.Swing(VistaFinalizar).play();
                 Finalizar(Tabla);
                 timeline.stop();
             }
@@ -483,7 +483,7 @@ public abstract class ModosdeJuego {
              Platform.runLater(() -> {
                  if(FinalizarJuego==NumeroParejas){
                      VistaFinalizar.toFront();
-                     new animatefx.animation.BounceIn(VistaFinalizar).play();
+                     new animatefx.animation.Swing(VistaFinalizar).play();
                      Finalizar(Tabla);
                  }else {
                     if (turno % 2 == 0) {
@@ -520,7 +520,7 @@ public abstract class ModosdeJuego {
         }
         if(FinalizarJuego==NumeroParejas){
          VistaFinalizar.toFront();
-         new animatefx.animation.BounceIn(VistaFinalizar).play();
+         new animatefx.animation.Swing(VistaFinalizar).play();
          Finalizar(Tabla);
         }
     }
@@ -759,7 +759,7 @@ public abstract class ModosdeJuego {
              Platform.runLater(() -> {
                  if(FinalizarJuego==6){
                     VistaFinalizar.toFront();
-                    new animatefx.animation.BounceIn(VistaFinalizar).play();
+                    new animatefx.animation.Swing(VistaFinalizar).play();
                     Finalizar(Tabla);
                  }
              });
@@ -1013,7 +1013,6 @@ public void ActualizarTabla(Puntaje user1,Puntaje user2){
     if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
         if(Lista.get(i).getValor()==1){
-            System.out.println(Lista.get(i).getValor());
         Lista.get(i).setCartaAdelante(CartComodin);
         Lista.get(i).setCartaComodin(true);
         NumerosEncontrados.add(Lista.get(i).getValor());

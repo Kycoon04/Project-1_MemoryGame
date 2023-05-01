@@ -230,19 +230,19 @@ public class VistaJuegoController implements Initializable {
             modoJuego = new ModoJuego1();
             AnalizarConfiguracion();            
             cargarParametros(modoJuego);
-            IniciarFacil();
+            IniciarJuego(1);
             break;
         case 12:
             modoJuego = new ModoJuego2();
             AnalizarConfiguracion();
             cargarParametros(modoJuego);
-            IniciarMedio();
+            IniciarJuego(2);
             break;
         case 18:
             modoJuego = new ModoJuego3();
             AnalizarConfiguracion();
             cargarParametros(modoJuego);
-            IniciarDificil();
+            IniciarJuego(3);
             break;
         default:
             break;
@@ -325,89 +325,74 @@ public class VistaJuegoController implements Initializable {
     }else{
     ReguladorClicks(event,2);
     }
-}
-    public void IniciarFacil(){
-        ClaseCarta[] cartas = new ClaseCarta[] {
-        new ClaseCarta(Carta1,1),
-        new ClaseCarta(Carta2,2),
-        new ClaseCarta(Carta3,3),
-        new ClaseCarta(Carta4,4),
-        new ClaseCarta(Carta5,5),
-        new ClaseCarta(Carta6,6),
-    };
-    for (ClaseCarta carta : cartas) {
-        modoJuego.getLista().add(carta);
     }
-    VistaJuego1.toFront();
+    @FXML
+    private void CheckPersonavsPersona(ActionEvent event) {
+        if(checkPvsP.isSelected()){
+        checkPvsPc.setDisable(true);
+        campo3.setDisable(true);
+        campo4.setDisable(true);
+        }
+        else{
+        checkPvsPc.setDisable(false);
+        campo3.setDisable(false);
+        campo4.setDisable(false);
+        }
+    }
+    @FXML
+    private void CheckPersonavsPc(ActionEvent event) {
+        if(checkPvsPc.isSelected()){
+        checkPvsP.setDisable(true);
+        campo1.setDisable(true);
+        campo2.setDisable(true);
+        }
+        else{
+        checkPvsP.setDisable(false);
+        campo1.setDisable(false);
+        campo2.setDisable(false);
+        }
+    }
+    @FXML
+    private void Sonidobtn(MouseEvent event) {
+    }
+    
+    
+    /*METODOS FUERA DE FXML--------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    public void IniciarJuego(int dificultad) {
+    ImageView[] objetosCarta = null;
+    switch(dificultad) {
+        case 1: // Fácil
+            objetosCarta = new ImageView[] {Carta1, Carta2, Carta3, Carta4, Carta5, Carta6};
+            VistaJuego1.toFront();
+            break;
+        case 2: // Medio
+            objetosCarta = new ImageView[] {Carta1Juego2, Carta2Juego2, Carta3Juego2, Carta4Juego2, Carta5Juego2, Carta6Juego2, Carta7Juego2, Carta8Juego2, 
+            Carta9Juego2, Carta10Juego2, Carta11Juego2, Carta12Juego2};
+            VistaJuego1.toFront();
+            VistaJuego2.toFront();
+            break;
+        case 3: // Difícil
+            objetosCarta = new ImageView[] {Carta1Juego3, Carta2Juego3, Carta3Juego3, Carta4Juego3, Carta5Juego3, Carta6Juego3, Carta7Juego3, Carta8Juego3, 
+            Carta9Juego3, Carta10Juego3, Carta11Juego3, Carta12Juego3, Carta13Juego3, Carta14Juego3, Carta15Juego3, Carta16Juego3, Carta17Juego3, Carta18Juego3};
+            VistaJuego1.toFront();
+            VistaJuego3.toFront();
+            break;
+    }
+    ClaseCarta[] cartas = new ClaseCarta[CantidadCartas.getValue()];
+    for (int i = 0; i < CantidadCartas.getValue(); i++) {
+        modoJuego.getLista().add(new ClaseCarta(objetosCarta[i], i+1));
+    }
     modoJuego.CargarNumero();
     modoJuego.CargarImagen();
-    if(CartaComodin.isSelected()){
-         modoJuego.CargarComodin();
-    }
-    modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
-    }
-    public void IniciarMedio(){
-        ClaseCarta[] cartas = new ClaseCarta[] {
-        new ClaseCarta(Carta1Juego2,1),
-        new ClaseCarta(Carta2Juego2,2),
-        new ClaseCarta(Carta3Juego2,3),
-        new ClaseCarta(Carta4Juego2,4),
-        new ClaseCarta(Carta5Juego2,5),
-        new ClaseCarta(Carta6Juego2,6),
-        new ClaseCarta(Carta7Juego2,7),
-        new ClaseCarta(Carta8Juego2,8),
-        new ClaseCarta(Carta9Juego2,9),
-        new ClaseCarta(Carta10Juego2,10),
-        new ClaseCarta(Carta11Juego2,11),
-        new ClaseCarta(Carta12Juego2,12),
-    };
-    for (ClaseCarta carta : cartas) {
-         modoJuego.getLista().add(carta);
-    }
-    VistaJuego1.toFront();
-    VistaJuego2.toFront();
-    modoJuego.CargarNumero();
-    modoJuego.CargarImagen();
-    if(CartaComodin.isSelected()){
-         modoJuego.CargarComodin();
-    }
-    modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
-    }
-        public void IniciarDificil(){
-        ClaseCarta[] cartas = new ClaseCarta[] {
-        new ClaseCarta(Carta1Juego3,1),
-        new ClaseCarta(Carta2Juego3,2),
-        new ClaseCarta(Carta3Juego3,3),
-        new ClaseCarta(Carta4Juego3,4),
-        new ClaseCarta(Carta5Juego3,5),
-        new ClaseCarta(Carta6Juego3,6),
-        new ClaseCarta(Carta7Juego3,7),
-        new ClaseCarta(Carta8Juego3,8),
-        new ClaseCarta(Carta9Juego3,9),
-        new ClaseCarta(Carta10Juego3,10),
-        new ClaseCarta(Carta11Juego3,11),
-        new ClaseCarta(Carta12Juego3,12),
-        new ClaseCarta(Carta13Juego3,13),
-        new ClaseCarta(Carta14Juego3,14),
-        new ClaseCarta(Carta15Juego3,15),
-        new ClaseCarta(Carta16Juego3,16),
-        new ClaseCarta(Carta17Juego3,17),
-        new ClaseCarta(Carta18Juego3,18),
-    };
-    for (ClaseCarta carta : cartas) {
-         modoJuego.getLista().add(carta);
-    }
-    VistaJuego1.toFront();
-    VistaJuego3.toFront();
-    modoJuego.CargarNumero();
-    modoJuego.CargarImagen();
-    if(CartaComodin.isSelected()){
+    if(CartaComodin.isSelected()) {
         modoJuego.CargarComodin();
     }
     modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
+    
     public void cargarParametros(ModosdeJuego obj){
-        
      obj.getParametrosText().add(username1);
      obj.getParametrosText().add(username2);
      obj.getParametrosText().add(pts1);
@@ -420,6 +405,7 @@ public class VistaJuegoController implements Initializable {
      obj.getParametrosText().add(Nombre2);
      obj.getParametrosText().add(tiempo);
     }
+    
     public void FinalizoJuego(ModosdeJuego obj){
     obj.reset();
     obj.Limpiar(obj.getLista(),obj.getNumerosEncontrados(),username1,username2,pts1,pts2);
@@ -450,6 +436,7 @@ public class VistaJuegoController implements Initializable {
         }
     }
     }
+    
     public void AnalizarConfiguracion(){ /* Aqui lo que hace es guardar todo lo de modos de juego y dificultad */
         modoJuego.setPersonavscomputadora(checkPvsPc.isSelected());
         if(checkPvsP.isSelected()){
@@ -480,43 +467,13 @@ public class VistaJuegoController implements Initializable {
          modoJuego.setCartaComodin(CartaComodin.isSelected());
          modoJuego.setReacomodo(botonCartasAutomaticas.isSelected());
         if(BotonDificultadFacil.isSelected()){
-        modoJuego.setDificultad(5);
+        modoJuego.setDificultad(10);
         }
         if(BotonDificultadMedia.isSelected()){
-        modoJuego.setDificultad(12);
+        modoJuego.setDificultad(20);
         }
         if(BotonDificultadDificil.isSelected()){
-        modoJuego.setDificultad(150);
+        modoJuego.setDificultad(50);
         }
-    }
-    
-    @FXML
-    private void CheckPersonavsPersona(ActionEvent event) {
-        if(checkPvsP.isSelected()){
-        checkPvsPc.setDisable(true);
-        campo3.setDisable(true);
-        campo4.setDisable(true);
-        }
-        else{
-        checkPvsPc.setDisable(false);
-        campo3.setDisable(false);
-        campo4.setDisable(false);
-        }
-    }
-    @FXML
-    private void CheckPersonavsPc(ActionEvent event) {
-        if(checkPvsPc.isSelected()){
-        checkPvsP.setDisable(true);
-        campo1.setDisable(true);
-        campo2.setDisable(true);
-        }
-        else{
-        checkPvsP.setDisable(false);
-        campo1.setDisable(false);
-        campo2.setDisable(false);
-        }
-    }
-    @FXML
-    private void Sonidobtn(MouseEvent event) {
     }
 }
