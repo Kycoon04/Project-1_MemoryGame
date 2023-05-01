@@ -31,7 +31,7 @@ public class VistaJuegoController implements Initializable {
     ModosdeJuego Facil = new ModoJuego1();
     ModosdeJuego Medio = new ModoJuego2();
     ModosdeJuego Dificil = new ModoJuego3();
-    
+    ModosdeJuego modoJuego;
     
     /*ATRIBUTOS JAVAFX-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @FXML
@@ -77,7 +77,7 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private Text username2;
     @FXML
-    private ChoiceBox<String> CantidadCartas = new ChoiceBox<String>();
+    private ChoiceBox<Integer> CantidadCartas = new ChoiceBox<Integer>();
     @FXML
     private ChoiceBox<Integer> TiempoMaxTotal = new ChoiceBox<Integer>();
     @FXML
@@ -193,10 +193,10 @@ public class VistaJuegoController implements Initializable {
     /*FIN ATRIBUTOS JAVAFX---------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-    CantidadCartas.getItems().add("6");
-    CantidadCartas.getItems().add("12");
-    CantidadCartas.getItems().add("18");
-    CantidadCartas.setValue("6");
+    CantidadCartas.getItems().add(6);
+    CantidadCartas.getItems().add(12);
+    CantidadCartas.getItems().add(18);
+    CantidadCartas.setValue(6);
     TiempoMaxTotal.getItems().add(2);
     TiempoMaxTotal.getItems().add(5);
     TiempoMaxTotal.getItems().add(8);
@@ -225,13 +225,28 @@ public class VistaJuegoController implements Initializable {
     }
     @FXML
     private void IniciarJuego(ActionEvent event) {
-        AnalizarConfiguracion();
-        switch(CantidadCartas.getValue()){
-            case "6": cargarParametros(Facil);IniciarFacil();break;
-            case "12": cargarParametros(Medio);IniciarMedio();break;
-            case "18": cargarParametros(Dificil);IniciarDificil();break;
-            default:break;
-        }
+    switch(CantidadCartas.getValue()){
+        case 6:
+            modoJuego = new ModoJuego1();
+            AnalizarConfiguracion();            
+            cargarParametros(modoJuego);
+            IniciarFacil();
+            break;
+        case 12:
+            modoJuego = new ModoJuego2();
+            AnalizarConfiguracion();
+            cargarParametros(modoJuego);
+            IniciarMedio();
+            break;
+        case 18:
+            modoJuego = new ModoJuego3();
+            AnalizarConfiguracion();
+            cargarParametros(modoJuego);
+            IniciarDificil();
+            break;
+        default:
+            break;
+    }
     }
     @FXML
     private void VistaModoJuego(ActionEvent event) {
@@ -248,9 +263,9 @@ public class VistaJuegoController implements Initializable {
     @FXML
     private void modoRevision(ActionEvent event) {
         switch(CantidadCartas.getValue()){
-            case "6": Facil.ModoRevision(VistaJuego1);break;
-            case "12": Medio.ModoRevision(VistaJuego2);break;
-            case "18": Dificil.ModoRevision(VistaJuego3);break;
+            case 6: modoJuego.ModoRevision(VistaJuego1);break;
+            case 12: modoJuego.ModoRevision(VistaJuego2);break;
+            case 18: modoJuego.ModoRevision(VistaJuego3);break;
             default:break;
         }
     }
@@ -265,9 +280,9 @@ public class VistaJuegoController implements Initializable {
     private void SalirJuego(ActionEvent event) {
     VistaPrincipal.toFront();
         switch(CantidadCartas.getValue()){
-            case "6": FinalizoJuego(Facil);break;
-            case "12": FinalizoJuego(Medio);break;
-            case "18": FinalizoJuego(Dificil);break;
+            case 6: FinalizoJuego(modoJuego);break;
+            case 12: FinalizoJuego(modoJuego);break;
+            case 18: FinalizoJuego(modoJuego);break;
             default:break;
         }
     }
@@ -321,15 +336,15 @@ public class VistaJuegoController implements Initializable {
         new ClaseCarta(Carta6,6),
     };
     for (ClaseCarta carta : cartas) {
-        Facil.getLista().add(carta);
+        modoJuego.getLista().add(carta);
     }
     VistaJuego1.toFront();
-    Facil.CargarNumero();
-    Facil.CargarImagen();
+    modoJuego.CargarNumero();
+    modoJuego.CargarImagen();
     if(CartaComodin.isSelected()){
-         Facil.CargarComodin();
+         modoJuego.CargarComodin();
     }
-    Facil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
+    modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
     public void IniciarMedio(){
         ClaseCarta[] cartas = new ClaseCarta[] {
@@ -347,16 +362,16 @@ public class VistaJuegoController implements Initializable {
         new ClaseCarta(Carta12Juego2,12),
     };
     for (ClaseCarta carta : cartas) {
-        Medio.getLista().add(carta);
+         modoJuego.getLista().add(carta);
     }
     VistaJuego1.toFront();
     VistaJuego2.toFront();
-    Medio.CargarNumero();
-    Medio.CargarImagen();
+    modoJuego.CargarNumero();
+    modoJuego.CargarImagen();
     if(CartaComodin.isSelected()){
-         Medio.CargarComodin();
+         modoJuego.CargarComodin();
     }
-    Medio.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
+    modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
         public void IniciarDificil(){
         ClaseCarta[] cartas = new ClaseCarta[] {
@@ -380,16 +395,16 @@ public class VistaJuegoController implements Initializable {
         new ClaseCarta(Carta18Juego3,18),
     };
     for (ClaseCarta carta : cartas) {
-        Dificil.getLista().add(carta);
+         modoJuego.getLista().add(carta);
     }
     VistaJuego1.toFront();
     VistaJuego3.toFront();
-    Dificil.CargarNumero();
-    Dificil.CargarImagen();
+    modoJuego.CargarNumero();
+    modoJuego.CargarImagen();
     if(CartaComodin.isSelected()){
-        Dificil.CargarComodin();
+        modoJuego.CargarComodin();
     }
-    Dificil.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
+    modoJuego.Iniciar(VistaFinalizar, Tabla,TiempoMaxTotal.getValue(),TiempoMaxJugador.getValue());
     }
     public void cargarParametros(ModosdeJuego obj){
         
@@ -421,24 +436,22 @@ public class VistaJuegoController implements Initializable {
             timeline.play();
         }
         switch (CantidadCartas.getValue()) {
-            case "6":
-                Facil.Juego(event, Tabla, VistaFinalizar);
+            case 6:
+                 modoJuego.Juego(event, Tabla, VistaFinalizar);
                 break;
-            case "12":
-                Medio.Juego(event, Tabla, VistaFinalizar);
+            case 12:
+                 modoJuego.Juego(event, Tabla, VistaFinalizar);
                 break;
-            case "18":
-                Dificil.Juego(event, Tabla, VistaFinalizar);
+            case 18:
+                 modoJuego.Juego(event, Tabla, VistaFinalizar);
                 break;
             default:
                 break;
         }
     }
     }
-    public void AnalizarConfiguracion(){
-        Facil.setPersonavscomputadora(checkPvsPc.isSelected());
-        Medio.setPersonavscomputadora(checkPvsPc.isSelected());
-        Dificil.setPersonavscomputadora(checkPvsPc.isSelected());
+    public void AnalizarConfiguracion(){ /* Aqui lo que hace es guardar todo lo de modos de juego y dificultad */
+        modoJuego.setPersonavscomputadora(checkPvsPc.isSelected());
         if(checkPvsP.isSelected()){
             if(campo1.getText().isEmpty()){
                username1.setText("Jugador 1");
@@ -458,46 +471,25 @@ public class VistaJuegoController implements Initializable {
             }
         }
          if(TresCartas.isSelected()){
-         Facil.setTresCartas(true); Facil.setNumeroParejas(2);
-         Medio.setTresCartas(true); Medio.setNumeroParejas(4);
-         Dificil.setTresCartas(true); Dificil.setNumeroParejas(6);
+         modoJuego.setTresCartas(true); modoJuego.setNumeroParejas(CantidadCartas.getValue()/3);
          }else{
-         Facil.setTresCartas(false); Facil.setNumeroParejas(3);
-         Medio.setTresCartas(false); Medio.setNumeroParejas(6);
-         Dificil.setTresCartas(false); Dificil.setNumeroParejas(9);
+         modoJuego.setTresCartas(false); modoJuego.setNumeroParejas(CantidadCartas.getValue()/2);
          }
-         Facil.setPuntoAdicional(PuntoAdicional.isSelected());
-         Medio.setPuntoAdicional(PuntoAdicional.isSelected());
-         Dificil.setPuntoAdicional(PuntoAdicional.isSelected());
-         Facil.setCastigoPunto(CastigoPunto.isSelected());
-         Medio.setCastigoPunto(CastigoPunto.isSelected());
-         Dificil.setCastigoPunto(CastigoPunto.isSelected());
-         
-         Facil.setCartaComodin(CartaComodin.isSelected());
-         Medio.setCartaComodin(CartaComodin.isSelected());
-         Dificil.setCartaComodin(CartaComodin.isSelected());
-         
+         modoJuego.setPuntoAdicional(PuntoAdicional.isSelected());
+         modoJuego.setCastigoPunto(CastigoPunto.isSelected());
+         modoJuego.setCartaComodin(CartaComodin.isSelected());
+         modoJuego.setReacomodo(botonCartasAutomaticas.isSelected());
         if(BotonDificultadFacil.isSelected()){
-        Facil.setDificultad(5);
-        Medio.setDificultad(5);
-        Dificil.setDificultad(5);
+        modoJuego.setDificultad(5);
         }
         if(BotonDificultadMedia.isSelected()){
-        Facil.setDificultad(12);
-        Medio.setDificultad(12);
-        Dificil.setDificultad(12);
+        modoJuego.setDificultad(12);
         }
         if(BotonDificultadDificil.isSelected()){
-        Facil.setDificultad(150);
-        Medio.setDificultad(150);
-        Dificil.setDificultad(150);
+        modoJuego.setDificultad(150);
         }
-        Facil.setReacomodo(botonCartasAutomaticas.isSelected());
-        Medio.setReacomodo(botonCartasAutomaticas.isSelected());
-        Dificil.setReacomodo(botonCartasAutomaticas.isSelected());
-        
     }
-
+    
     @FXML
     private void CheckPersonavsPersona(ActionEvent event) {
         if(checkPvsP.isSelected()){

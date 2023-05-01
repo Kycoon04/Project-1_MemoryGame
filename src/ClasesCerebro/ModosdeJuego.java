@@ -59,15 +59,11 @@ public abstract class ModosdeJuego {
         NumeroPartidas=0;
     }
 
-    public void setCartaComodin(boolean CartaComodin) {
-        this.CartaComodin = CartaComodin;
-    }
-
     public abstract void CartaSelecionada(String d);
     public abstract void ModoRevision(BorderPane Juego);
-
-    public ObservableList<Puntaje> getPuntajes() {
-        return puntajes;
+    
+    public void setCartaComodin(boolean CartaComodin) {
+        this.CartaComodin = CartaComodin;
     }
 
     public void setReacomodo(boolean Reacomodo) {
@@ -110,37 +106,8 @@ public abstract class ModosdeJuego {
         this.NumeroPartidas = NumeroPartidas;
     }
 
-    public void setTurno(int turno) {
-        this.turno = turno;
-    }
-
-    public void setMinutos(int minutos) {
-        this.minutos = minutos;
-    }
-
-    public void setSegundos(int segundos) {
-        this.segundos = segundos;
-    }
-
-    public void setContJugador1(float ContJugador1) {
-        this.ContJugador1 = ContJugador1;
-    }
-
-    public void setContJugador2(float ContJugador2) {
-        this.ContJugador2 = ContJugador2;
-    }
-
-
-    public void setTimeline(Timeline timeline) {
-        this.timeline = timeline;
-    }
-
     public void setPersonavscomputadora(boolean Personavscomputadora) {
         this.Personavscomputadora = Personavscomputadora;
-    }
-
-    public void setFinalizarJuego(int FinalizarJuego) {
-        this.FinalizarJuego = FinalizarJuego;
     }
 
     public void resetB(){
@@ -231,8 +198,8 @@ public abstract class ModosdeJuego {
             PuntosGanados();
             NumerosEncontrados.add(a.getValor());
             NumerosEncontrados.add(b.getValor());
-            setFinalizarJuego(FinalizarJuego+1);
-            setTurno(turno-1);
+            FinalizarJuego+=1;
+            turno-=1;
            if(Reacomodo){
            for (int i = 0; i < Lista.size(); i++) {
                if (!NumerosEncontrados.contains(Lista.get(i).getValor())) {
@@ -270,8 +237,8 @@ public abstract class ModosdeJuego {
             PuntosGanados();
            NumerosEncontrados.add(a.getValor());
            NumerosEncontrados.add(b.getValor());
-           setFinalizarJuego(FinalizarJuego+1);
-           setTurno(turno-1);
+           FinalizarJuego+=1;
+           turno-=1;
            if(CartaComodin){
         if(TresCartas){
         for(int i=0;i<NumeroCartas;i++){
@@ -328,7 +295,7 @@ public abstract class ModosdeJuego {
         }
         a.setValor(0);
         b.setValor(0);
-        setTurno(turno+1);
+        turno+=1;
         }
         }
         ListaReacomodo.clear();
@@ -384,16 +351,16 @@ public abstract class ModosdeJuego {
             new animatefx.animation.BounceIn(Lista.get(k).getCartaAtras()).play();
             }
         }
-        setTurno(turno+1);
+        turno+=1;
         if(aux == num2 ||aux == num1){
-            setTurno(turno-1);
+            turno-=1;
             new animatefx.animation.Swing(a.getPosicion()).play();
             new animatefx.animation.Swing(b.getPosicion()).play();
-            setContJugador2(ContJugador2+2);
+            ContJugador2 = (ContJugador2+2);
             getParametrosText().get(3).setText(ContJugador2+" pts");
             getNumerosEncontrados().add(num1);
             getNumerosEncontrados().add(num2);
-            setFinalizarJuego(FinalizarJuego+1);
+            FinalizarJuego+=1;
         }
         else{
             MarcarTurno();
@@ -408,7 +375,7 @@ public abstract class ModosdeJuego {
             };
            setTimeout(mx,1000);    
            if(CastigoPunto){
-           setContJugador2((float) (ContJugador2-0.5));
+           ContJugador2 = ((float) (ContJugador2-0.5));
            }
            getParametrosText().get(3).setText(ContJugador2+" pts");
         }
@@ -464,10 +431,10 @@ public abstract class ModosdeJuego {
         resetC();
         ContCartaComodin=1;
         getParametrosText().get(10).setText(String.valueOf("Tiempo: "+minutos+":"+segundos));
-        setTimeline(new Timeline(new KeyFrame(Duration.seconds(1),e ->{
+        timeline = (new Timeline(new KeyFrame(Duration.seconds(1),e ->{
             if(segundos==59){
-            setMinutos(minutos+1);
-            setSegundos(0);
+            minutos+=1;
+            segundos=0;
             }
             if(minutos==TiempoMax){
                 VistaFinalizar.toFront();
@@ -476,12 +443,12 @@ public abstract class ModosdeJuego {
                 timeline.stop();
             }
             if(segundosJugador==TiempoMaxJugador){
-                setTurno(turno+1);
+                turno+=1;
                 MarcarTurno();
                 segundosJugador=0;
             }
             segundosJugador+=1;
-            setSegundos(segundos+1);
+           segundos+=1;
             getParametrosText().get(10).setText("Tiempo: "+minutos+":"+segundos);
         })));
         timeline.setCycleCount(Animation.INDEFINITE);
@@ -608,8 +575,8 @@ public abstract class ModosdeJuego {
             getNumerosEncontrados().add(a.getValor());
             getNumerosEncontrados().add(b.getValor());
             getNumerosEncontrados().add(c.getValor());
-            setFinalizarJuego(FinalizarJuego+1);
-            setTurno(turno-1);
+            FinalizarJuego+=1;
+            turno-=1;
             segundosJugador=0;
         }
         else{
@@ -671,7 +638,7 @@ public abstract class ModosdeJuego {
     a.setValor(0);
     b.setValor(0);
     c.setValor(0);
-    setTurno(turno+1);
+    turno+=1;
     }
     ContCartaComodin=1;
     }
@@ -773,18 +740,18 @@ public abstract class ModosdeJuego {
             new animatefx.animation.BounceIn(carta2.getCartaAtras()).play();
         }
         }
-        setTurno(turno+1);
+        turno+=1;
         if(Bandera){
-            setTurno(turno-1);
+            turno-=1;
             new animatefx.animation.Swing(a.getPosicion()).play();
             new animatefx.animation.Swing(b.getPosicion()).play();
             new animatefx.animation.Swing(c.getPosicion()).play();
-            setContJugador2(ContJugador2+2);
+            ContJugador2=(ContJugador2+2);
             ParametrosText.get(3).setText(ContJugador2+" pts");
             NumerosEncontrados.add(num1);
             NumerosEncontrados.add(num2);
             NumerosEncontrados.add(num3);
-            setFinalizarJuego(FinalizarJuego+1);
+            FinalizarJuego+=1;
             Runnable mx = new Runnable() {
             @Override
             public void run() {
@@ -813,7 +780,7 @@ public abstract class ModosdeJuego {
             };
            setTimeout(mx,1000);    
            if(CastigoPunto){
-           setContJugador2((float) (ContJugador2-0.5));
+           ContJugador2 =((float) (ContJugador2-0.5));
            }
            ParametrosText.get(3).setText(ContJugador2+" pts");
         }
@@ -928,11 +895,11 @@ public void ActualizarTabla(Puntaje user1,Puntaje user2){
     public void PuntoCastigo(){
     if(CastigoPunto){
         if(!(turno%2==0)){
-        setContJugador1((float) (ContJugador1-0.5));
+        ContJugador1=((float) (ContJugador1-0.5));
         ParametrosText.get(2).setText(ContJugador1+" pts");
         }
         else{
-        setContJugador2((float) (ContJugador2-0.5));
+        ContJugador2=((float) (ContJugador2-0.5));
         ParametrosText.get(3).setText(ContJugador2+" pts");
         }
     }
@@ -942,30 +909,30 @@ public void ActualizarTabla(Puntaje user1,Puntaje user2){
     if(PuntoAdicional){
     if(PuntoAdi>=2){
             if(!(turno%2==0)){
-            setContJugador1(ContJugador1+3);
+            ContJugador1=(ContJugador1+3);
             ParametrosText.get(2).setText(ContJugador1+" pts");
             }
             else{
-            setContJugador2(ContJugador2+3);
+            ContJugador2=(ContJugador2+3);
             ParametrosText.get(3).setText(ContJugador2+" pts");
             }
         }else{
             if(!(turno%2==0)){
-            setContJugador1(ContJugador1+2);
+            ContJugador1=(ContJugador1+2);
             ParametrosText.get(2).setText(ContJugador1+" pts");
             }
             else{
-            setContJugador2(ContJugador2+2);
+            ContJugador2=(ContJugador2+2);
             ParametrosText.get(3).setText(ContJugador2+" pts");
             }
         }
     }else{
         if(!(turno%2==0)){
-            setContJugador1(ContJugador1+2);
+            ContJugador1=(ContJugador1+2);
             ParametrosText.get(2).setText(ContJugador1+" pts");
             }
             else{
-            setContJugador2(ContJugador2+2);
+            ContJugador2=(ContJugador2+2);
             ParametrosText.get(3).setText(ContJugador2+" pts");
         }
     }  
