@@ -910,7 +910,7 @@ public void ActualizarTabla(Puntaje user1,Puntaje user2){
             contador++;
         }
         if(!bandera){
-         puntajes.add(user2);
+        puntajes.add(user2);
         }
     }else{
         for(Puntaje aux: puntajes){
