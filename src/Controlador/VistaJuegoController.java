@@ -28,9 +28,6 @@ import javafx.util.Duration;
 public class VistaJuegoController implements Initializable {
     int contador=0;
     long tiempoMaximoEntreClics = 1000;
-    ModosdeJuego Facil = new ModoJuego1();
-    ModosdeJuego Medio = new ModoJuego2();
-    ModosdeJuego Dificil = new ModoJuego3();
     ModosdeJuego modoJuego;
     
     /*ATRIBUTOS JAVAFX-------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -412,7 +409,7 @@ public class VistaJuegoController implements Initializable {
     }
     
     public void ReguladorClicks(MouseEvent event, int NumCartas){
-        tiempoMaximoEntreClics = CartaComodin.isSelected() ? 50 : 1000;
+        tiempoMaximoEntreClics = TresCartas.isSelected() ? 50 : 1000;
         if (contador < NumCartas) { /*Si alguien con mala voluntad para buscar errores podria darle click a 3 cartas a la vez, sabiendo que esta programado para que compare 2 cartas*/
         contador++;     /*Esto lo que hace es que al segundo click seguido se bloquee y no permita dar mas*/
         if (contador == NumCartas) {
@@ -438,7 +435,9 @@ public class VistaJuegoController implements Initializable {
     }
     
     public void AnalizarConfiguracion(){ /* Aqui lo que hace es guardar todo lo de modos de juego y dificultad */
+        if(!CartaComodin.isSelected()){
         modoJuego.setPersonavscomputadora(checkPvsPc.isSelected());
+        }
         if(checkPvsP.isSelected()){
             if(campo1.getText().isEmpty()){
                username1.setText("Jugador 1");
@@ -470,7 +469,7 @@ public class VistaJuegoController implements Initializable {
         modoJuego.setDificultad(10);
         }
         if(BotonDificultadMedia.isSelected()){
-        modoJuego.setDificultad(20);
+        modoJuego.setDificultad(30);
         }
         if(BotonDificultadDificil.isSelected()){
         modoJuego.setDificultad(50);
