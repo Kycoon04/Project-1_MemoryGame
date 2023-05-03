@@ -9,7 +9,7 @@ public class ClaseCarta {
     private int NumCarta;
     private boolean cartaComodin;
 
-    public ClaseCarta(ImageView CartaAtras, int NumCarta) {
+    public ClaseCarta(ImageView CartaAtras, int NumCarta) {/*José Manuel Valverde Valverde*/
         this.CartaAtras = CartaAtras;
         this.NumCarta = NumCarta;
         cartaComodin=false;

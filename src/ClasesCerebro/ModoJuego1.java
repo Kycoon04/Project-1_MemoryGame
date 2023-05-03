@@ -7,7 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-public class ModoJuego1 extends ModosdeJuego  {
+public class ModoJuego1 extends ModosdeJuego  {/*José Manuel Valverde Valverde*/
     
     
     

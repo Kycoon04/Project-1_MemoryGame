@@ -25,7 +25,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
-public class VistaJuegoController implements Initializable {
+public class VistaJuegoController implements Initializable {/*José Manuel Valverde Valverde*/
     int contador=0;
     long tiempoMaximoEntreClics = 1000;
     ModosdeJuego modoJuego;

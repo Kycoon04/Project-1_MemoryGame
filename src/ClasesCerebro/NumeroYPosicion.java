@@ -6,7 +6,7 @@ public class NumeroYPosicion {
     int Valor;
     ImageView Posicion;
 
-    public NumeroYPosicion(int Valor, ImageView Posicion) {
+    public NumeroYPosicion(int Valor, ImageView Posicion) {/*José Manuel Valverde Valverde*/
         this.Valor = Valor;
         this.Posicion = Posicion;
     }

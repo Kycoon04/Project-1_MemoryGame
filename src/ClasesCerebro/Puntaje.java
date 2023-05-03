@@ -5,7 +5,7 @@ public class Puntaje {
     private float puntaje1;
     private String Jugador1;
 
-    public Puntaje(float puntaje1,String Jugador1) {
+    public Puntaje(float puntaje1,String Jugador1) {/*José Manuel Valverde Valverde*/
         this.puntaje1 = puntaje1;
          this.Jugador1 = Jugador1;
     }

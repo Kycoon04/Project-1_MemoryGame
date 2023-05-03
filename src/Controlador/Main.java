@@ -9,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
+/*José Manuel Valverde Valverde*/
+
 public class Main extends Application {
     private final Image icon = new Image(getClass().getResourceAsStream("/img/logo.png"));
     @Override

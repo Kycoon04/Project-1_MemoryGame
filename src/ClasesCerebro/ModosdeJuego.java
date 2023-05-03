@@ -18,7 +18,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 import javafx.util.Duration;
 
-public abstract class ModosdeJuego {
+public abstract class ModosdeJuego {/*José Manuel Valverde Valverde*/
     
     protected NumeroYPosicion a,b,c,aux;
     protected ArrayList<ClaseCarta> Lista = new ArrayList<>();

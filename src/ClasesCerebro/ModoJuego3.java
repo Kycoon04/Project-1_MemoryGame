@@ -7,7 +7,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-public class ModoJuego3 extends ModosdeJuego  {
+public class ModoJuego3 extends ModosdeJuego  {/*José Manuel Valverde Valverde*/
     public ModoJuego3() {
         NumeroCartas=18;
         NumeroParejas=9;
