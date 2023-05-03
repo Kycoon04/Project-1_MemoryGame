@@ -143,7 +143,7 @@ public abstract class ModosdeJuego {
           Runnable mx = new Runnable() {
           @Override
           public void run() {
-             ParejaPvPc(Dificultad,Tabla,VistaFinalizar);
+             ParejaPvPc(Tabla,VistaFinalizar);
              Platform.runLater(() -> {
                  if(FinalizarJuego==NumeroParejas){
                      VistaFinalizar.toFront();
@@ -301,17 +301,16 @@ public abstract class ModosdeJuego {
         ListaReacomodo.clear();
         ContCartaComodin=1;
     }
-    public void ParejaPvPc(int probabilidad,TableView<Puntaje> Tabla,Pane VistaFinalizar){
+    public void ParejaPvPc(TableView<Puntaje> Tabla,Pane VistaFinalizar){
         if(TresCartas){
-         ParejaPvPcTresCartas(probabilidad,Tabla,VistaFinalizar);
+         ParejaPvPcTresCartas(Tabla,VistaFinalizar);
         }else{
         Random rand = new Random();
         int i=0,j=0,aux=0;
         int num1 = rand.nextInt(NumeroCartas) + 1;
         int num2 = rand.nextInt(NumeroCartas) + 1;
         
-        
-        for(int k=0;k<probabilidad;k++){
+        for(int k=0;k<Dificultad;k++){
         num1 = rand.nextInt(NumeroCartas) + 1;
         num2 = rand.nextInt(NumeroCartas) + 1;
         while (num1 == num2) {
@@ -334,7 +333,7 @@ public abstract class ModosdeJuego {
         aux = num2 - NumeroParejas;
         }
         if(aux == num2 ||aux == num1){
-        k=probabilidad;
+        k=Dificultad;
         }
         }          
         for(int k=0; k<Lista.size();k++){
@@ -479,7 +478,7 @@ public abstract class ModosdeJuego {
           Runnable mx = new Runnable() {
           @Override
           public void run() {
-             ParejaPvPc(Dificultad,Tabla,VistaFinalizar);
+             ParejaPvPc(Tabla,VistaFinalizar);
              Platform.runLater(() -> {
                  if(FinalizarJuego==NumeroParejas){
                      VistaFinalizar.toFront();
@@ -643,7 +642,7 @@ public abstract class ModosdeJuego {
     ContCartaComodin=1;
     }
     
-    public void ParejaPvPcTresCartas(int probabilidad, TableView<Puntaje> Tabla, Pane VistaFinalizar) {
+    public void ParejaPvPcTresCartas(TableView<Puntaje> Tabla, Pane VistaFinalizar) {
         int mayor=0, segundoMayor=0, menor=0;
         boolean Bandera=false;
         Random rand = new Random();
@@ -652,7 +651,7 @@ public abstract class ModosdeJuego {
         int num2 = rand.nextInt(NumeroCartas) + 1;
         int num3 = rand.nextInt(NumeroCartas) + 1;
         
-        for(int k=0;k<probabilidad;k++){  
+        for(int k=0;k<Dificultad;k++){  
         num1 = rand.nextInt(NumeroCartas) + 1;
         num2 = rand.nextInt(NumeroCartas) + 1;
         num3 = rand.nextInt(NumeroCartas) + 1;
@@ -715,7 +714,7 @@ public abstract class ModosdeJuego {
       }
     }
     if(mayor-NumeroParejas== segundoMayor && segundoMayor-NumeroParejas == menor){
-    k=probabilidad;
+    k=Dificultad;
     Bandera=true;
     }
     }
@@ -755,7 +754,7 @@ public abstract class ModosdeJuego {
             Runnable mx = new Runnable() {
             @Override
             public void run() {
-             ParejaPvPc(Dificultad,Tabla,VistaFinalizar);
+             ParejaPvPcTresCartas(Tabla,VistaFinalizar);
              Platform.runLater(() -> {
                  if(FinalizarJuego==6){
                     VistaFinalizar.toFront();

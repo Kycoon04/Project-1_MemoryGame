@@ -464,15 +464,15 @@ public class VistaJuegoController implements Initializable {
          modoJuego.setPuntoAdicional(PuntoAdicional.isSelected());
          modoJuego.setCastigoPunto(CastigoPunto.isSelected());
          modoJuego.setCartaComodin(CartaComodin.isSelected());
-         modoJuego.setReacomodo(botonCartasAutomaticas.isSelected());
+         modoJuego.setReacomodo(botonCartasAutomaticas.isSelected() && checkPvsP.isSelected());
         if(BotonDificultadFacil.isSelected()){
-        modoJuego.setDificultad(10);
+        modoJuego.setDificultad(50);
         }
         if(BotonDificultadMedia.isSelected()){
-        modoJuego.setDificultad(30);
+        modoJuego.setDificultad(150);
         }
         if(BotonDificultadDificil.isSelected()){
-        modoJuego.setDificultad(50);
+        modoJuego.setDificultad(250);
         }
     }
 }
